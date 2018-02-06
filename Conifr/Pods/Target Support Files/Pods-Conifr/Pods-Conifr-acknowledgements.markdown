@@ -1,6 +1,14 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## ArcKit
+
+Copyright 2017 Matt Greenfield. All rights reserved.
+
+## ArcKitCore
+
+Copyright 2017 Matt Greenfield. All rights reserved.
+
 ## Firebase
 
 Copyright 2018 Google
