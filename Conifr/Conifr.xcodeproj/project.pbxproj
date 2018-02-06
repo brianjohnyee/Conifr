@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C32C6A88E77DDAD66DC7E858 /* Pods_Conifr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */; };
+		F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4AD566B202A0C8200C6D321 /* GoogleService-Info.plist */; };
+		F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */; };
+		F4B5F84D202A0B6D008B7C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B5F84B202A0B6D008B7C72 /* Main.storyboard */; };
+		F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */; };
+		F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B5F851202A0B6D008B7C72 /* Assets.xcassets */; };
+		F4B5F855202A0B6D008B7C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B5F853202A0B6D008B7C72 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.release.xcconfig"; sourceTree = "<group>"; };
+		D8B4F7739FB840E743BB9E15 /* Pods-Conifr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.debug.xcconfig"; sourceTree = "<group>"; };
+		ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conifr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AD566B202A0C8200C6D321 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4B5F844202A0B6D008B7C72 /* Conifr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conifr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4B5F84C202A0B6D008B7C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4B5F84F202A0B6D008B7C72 /* Conifr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Conifr.xcdatamodel; sourceTree = "<group>"; };
+		F4B5F851202A0B6D008B7C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4B5F854202A0B6D008B7C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4B5F856202A0B6D008B7C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B5F841202A0B6D008B7C72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32C6A88E77DDAD66DC7E858 /* Pods_Conifr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		792D3217D2CF23E25EE8C96D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8B4F7739FB840E743BB9E15 /* Pods-Conifr.debug.xcconfig */,
+				C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6B72DC5F144FA286EB6D1BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4B5F83B202A0B6D008B7C72 = {
+			isa = PBXGroup;
+			children = (
+				F4B5F846202A0B6D008B7C72 /* Conifr */,
+				F4B5F845202A0B6D008B7C72 /* Products */,
+				792D3217D2CF23E25EE8C96D /* Pods */,
+				E6B72DC5F144FA286EB6D1BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B5F845202A0B6D008B7C72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B5F844202A0B6D008B7C72 /* Conifr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B5F846202A0B6D008B7C72 /* Conifr */ = {
+			isa = PBXGroup;
+			children = (
+				F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */,
+				F4B5F84B202A0B6D008B7C72 /* Main.storyboard */,
+				F4B5F851202A0B6D008B7C72 /* Assets.xcassets */,
+				F4B5F853202A0B6D008B7C72 /* LaunchScreen.storyboard */,
+				F4B5F856202A0B6D008B7C72 /* Info.plist */,
+				F4AD566B202A0C8200C6D321 /* GoogleService-Info.plist */,
+				F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */,
+			);
+			path = Conifr;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4B5F843202A0B6D008B7C72 /* Conifr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B5F859202A0B6D008B7C72 /* Build configuration list for PBXNativeTarget "Conifr" */;
+			buildPhases = (
+				BE07467B33F5E8D1CF9C0B4F /* [CP] Check Pods Manifest.lock */,
+				F4B5F840202A0B6D008B7C72 /* Sources */,
+				F4B5F841202A0B6D008B7C72 /* Frameworks */,
+				F4B5F842202A0B6D008B7C72 /* Resources */,
+				4BEE845D381F1533DEEB8DF1 /* [CP] Embed Pods Frameworks */,
+				1EC1C0EB650CC47583A73CB1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Conifr;
+			productName = Conifr;
+			productReference = F4B5F844202A0B6D008B7C72 /* Conifr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B5F83C202A0B6D008B7C72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sid Verma";
+				TargetAttributes = {
+					F4B5F843202A0B6D008B7C72 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4B5F83F202A0B6D008B7C72 /* Build configuration list for PBXProject "Conifr" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4B5F83B202A0B6D008B7C72;
+			productRefGroup = F4B5F845202A0B6D008B7C72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B5F843202A0B6D008B7C72 /* Conifr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B5F842202A0B6D008B7C72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B5F855202A0B6D008B7C72 /* LaunchScreen.storyboard in Resources */,
+				F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */,
+				F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */,
+				F4B5F84D202A0B6D008B7C72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC1C0EB650CC47583A73CB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conifr/Pods-Conifr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BEE845D381F1533DEEB8DF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Conifr/Pods-Conifr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conifr/Pods-Conifr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE07467B33F5E8D1CF9C0B4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Conifr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B5F840202A0B6D008B7C72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */,
+				F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4B5F84B202A0B6D008B7C72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B5F84C202A0B6D008B7C72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4B5F853202A0B6D008B7C72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B5F854202A0B6D008B7C72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4B5F857202A0B6D008B7C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4B5F858202A0B6D008B7C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4B5F85A202A0B6D008B7C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B4F7739FB840E743BB9E15 /* Pods-Conifr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXN9JNTRNB;
+				INFOPLIST_FILE = Conifr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ucsc.Conifr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B5F85B202A0B6D008B7C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXN9JNTRNB;
+				INFOPLIST_FILE = Conifr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ucsc.Conifr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B5F83F202A0B6D008B7C72 /* Build configuration list for PBXProject "Conifr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B5F857202A0B6D008B7C72 /* Debug */,
+				F4B5F858202A0B6D008B7C72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B5F859202A0B6D008B7C72 /* Build configuration list for PBXNativeTarget "Conifr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B5F85A202A0B6D008B7C72 /* Debug */,
+				F4B5F85B202A0B6D008B7C72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4B5F84F202A0B6D008B7C72 /* Conifr.xcdatamodel */,
+			);
+			currentVersion = F4B5F84F202A0B6D008B7C72 /* Conifr.xcdatamodel */;
+			path = Conifr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F4B5F83C202A0B6D008B7C72 /* Project object */;
+}
