@@ -113,10 +113,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currenty I am (GPS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv5-Se-bou">
+                                <rect key="frame" x="93" y="494" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nI3-ac-axx">
+                                <rect key="frame" x="149" y="533" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5gz-2S-SCS" firstAttribute="leading" secondItem="Jzy-ei-zA2" secondAttribute="leading" constant="97" id="4N5-C6-9vm"/>
+                            <constraint firstItem="Bv5-Se-bou" firstAttribute="top" secondItem="Mr0-fh-Cmm" secondAttribute="bottom" constant="25" id="5yj-as-kWx"/>
                             <constraint firstItem="wkC-U4-if9" firstAttribute="leading" secondItem="Jzy-ei-zA2" secondAttribute="leading" constant="42" id="89n-oT-Dhb"/>
                             <constraint firstItem="t3g-PQ-405" firstAttribute="top" secondItem="joH-ul-bFx" secondAttribute="bottom" constant="21" id="JCm-5S-D2z"/>
                             <constraint firstItem="JZe-Wk-V6Z" firstAttribute="leading" secondItem="t3g-PQ-405" secondAttribute="leading" id="JUA-Bo-cpf"/>
@@ -134,20 +147,24 @@
                             <constraint firstItem="joH-ul-bFx" firstAttribute="top" secondItem="bhY-PV-PfH" secondAttribute="bottom" constant="22" id="gnJ-1z-6u2"/>
                             <constraint firstItem="joH-ul-bFx" firstAttribute="trailing" secondItem="08J-El-dPS" secondAttribute="trailingMargin" id="ifc-zX-AcU"/>
                             <constraint firstItem="wkC-U4-if9" firstAttribute="top" secondItem="5gz-2S-SCS" secondAttribute="bottom" constant="8" symbolic="YES" id="ivz-Lu-47B"/>
+                            <constraint firstItem="nI3-ac-axx" firstAttribute="centerX" secondItem="Bv5-Se-bou" secondAttribute="centerX" id="jMj-VY-0Rx"/>
                             <constraint firstItem="Mr0-fh-Cmm" firstAttribute="leading" secondItem="x1e-Uo-XFI" secondAttribute="leading" id="lJ0-uJ-1VH"/>
                             <constraint firstItem="5gz-2S-SCS" firstAttribute="centerX" secondItem="08J-El-dPS" secondAttribute="centerX" id="nom-G1-13M"/>
                             <constraint firstItem="5gz-2S-SCS" firstAttribute="top" secondItem="Jzy-ei-zA2" secondAttribute="top" constant="18" id="o4Z-jT-elY"/>
                             <constraint firstItem="Jzy-ei-zA2" firstAttribute="trailing" secondItem="t3g-PQ-405" secondAttribute="trailing" constant="27" id="o6V-Ui-tNH"/>
                             <constraint firstItem="Jzy-ei-zA2" firstAttribute="trailing" secondItem="wkC-U4-if9" secondAttribute="trailing" constant="45" id="rEl-0c-G8G"/>
+                            <constraint firstItem="Bv5-Se-bou" firstAttribute="centerX" secondItem="x1e-Uo-XFI" secondAttribute="centerX" id="rFQ-Cr-QfJ"/>
                             <constraint firstItem="Jzy-ei-zA2" firstAttribute="trailing" secondItem="x1e-Uo-XFI" secondAttribute="trailing" constant="76" id="twN-Sg-BIZ"/>
                             <constraint firstItem="Jzy-ei-zA2" firstAttribute="trailing" secondItem="Mr0-fh-Cmm" secondAttribute="trailing" constant="36" id="vxs-X2-7F0"/>
                             <constraint firstItem="Jzy-ei-zA2" firstAttribute="bottom" secondItem="bhY-PV-PfH" secondAttribute="bottom" constant="462" id="yIq-Ku-oXU"/>
+                            <constraint firstItem="nI3-ac-axx" firstAttribute="top" secondItem="Bv5-Se-bou" secondAttribute="bottom" constant="18" id="ynn-at-5qB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jzy-ei-zA2"/>
                     </view>
                     <connections>
                         <outlet property="activityLabel" destination="bhY-PV-PfH" id="KY5-DJ-uGl"/>
                         <outlet property="coreMotionPermissionLabel" destination="joH-ul-bFx" id="f0O-FN-kjv"/>
+                        <outlet property="gpsActivityLabel" destination="nI3-ac-axx" id="DbG-2x-t2o"/>
                         <outlet property="haveBackgroundPermissionLabel" destination="JZe-Wk-V6Z" id="r3A-9d-6gV"/>
                         <outlet property="haveLocationPermissionLabel" destination="t3g-PQ-405" id="pc9-3P-t7d"/>
                         <outlet property="latLabel" destination="x1e-Uo-XFI" id="2rg-gd-YbU"/>

@@ -28,6 +28,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var haveBackgroundPermissionLabel: UILabel!
     @IBOutlet weak var latLabel: UILabel!
     @IBOutlet weak var longLabel: UILabel!
+    @IBOutlet weak var gpsActivityLabel: UILabel!
     
     //MARK - View Controller Initializated and brought to front
     override func viewDidLoad() {
@@ -76,16 +77,26 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
             //Optional Chaining to unwrap rawLocation
             if let location = self.loco.rawLocation as? CLLocation {
                
+                var locationSample = self.loco.locomotionSample()
+                
                 //Creating strings from lat/long data
-                var latitudeText:String = "\(self.loco.locomotionSample().location?.coordinate.latitude)"
-                var longText:String = "\(self.loco.locomotionSample().location?.coordinate.longitude)"
+                var latitudeText:String = "\(locationSample.location?.coordinate.latitude)"
+                var longText:String = "\(locationSample.location?.coordinate.longitude)"
                 
                 //Setting label text for lat & long
                 self.latLabel.text = "LAT: " + latitudeText
                 self.longLabel.text = "LONG: " + longText
                 //Setting label text for Motion Activity by mapping first value (most confidence)
-                self.activityLabel.text = self.loco.locomotionSample().coreMotionActivityType.map { $0.rawValue }
-                
+                self.activityLabel.text = locationSample.coreMotionActivityType.map { $0.rawValue }
+
+                switch locationSample.movingState {
+                case .moving:
+                    self.gpsActivityLabel.text = "Moving"
+                case .stationary:
+                    self.gpsActivityLabel.text = "Stationary"
+                case .uncertain:
+                    self.gpsActivityLabel.text = "Uncertain"
+                }
             }
             
         }
