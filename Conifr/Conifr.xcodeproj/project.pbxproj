@@ -21,6 +21,8 @@
 		F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B5F851202A0B6D008B7C72 /* Assets.xcassets */; };
 		F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F4C507C4202A799D00758504 /* vienna-graz-by-car.gpx */; };
 		F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F4C507C6202A804600758504 /* vienna-ring-bikeride.gpx */; };
+		F4C507CC202A8E0B00758504 /* TripsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C507CA202A8E0A00758504 /* TripsCell.xib */; };
+		F4C507CD202A8E0B00758504 /* TripsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C507CB202A8E0A00758504 /* TripsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		F4B5F856202A0B6D008B7C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C507C4202A799D00758504 /* vienna-graz-by-car.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vienna-graz-by-car.gpx"; sourceTree = "<group>"; };
 		F4C507C6202A804600758504 /* vienna-ring-bikeride.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vienna-ring-bikeride.gpx"; sourceTree = "<group>"; };
+		F4C507CA202A8E0A00758504 /* TripsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsCell.xib; sourceTree = "<group>"; };
+		F4C507CB202A8E0A00758504 /* TripsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		F4B5F83B202A0B6D008B7C72 = {
 			isa = PBXGroup;
 			children = (
+				F4C507CE202A8E1C00758504 /* XIB */,
+				F4C507CF202A8E2C00758504 /* Cells */,
 				F4C507C9202A807A00758504 /* GPX */,
 				F4B5F846202A0B6D008B7C72 /* Conifr */,
 				F4B5F845202A0B6D008B7C72 /* Products */,
@@ -142,6 +148,22 @@
 				F4C507C4202A799D00758504 /* vienna-graz-by-car.gpx */,
 			);
 			path = GPX;
+			sourceTree = "<group>";
+		};
+		F4C507CE202A8E1C00758504 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				F4C507CA202A8E0A00758504 /* TripsCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		F4C507CF202A8E2C00758504 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F4C507CB202A8E0A00758504 /* TripsCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4883F98202A1B9100C15034 /* Main.storyboard in Resources */,
+				F4C507CC202A8E0B00758504 /* TripsCell.xib in Resources */,
 				F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */,
 				F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */,
 				F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */,
@@ -293,6 +316,7 @@
 				F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */,
 				F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */,
 				F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */,
+				F4C507CD202A8E0B00758504 /* TripsCell.swift in Sources */,
 				F41DC46A202A171900A0D842 /* MyTripsCollectionVC.swift in Sources */,
 				F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */,
 				F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */,
