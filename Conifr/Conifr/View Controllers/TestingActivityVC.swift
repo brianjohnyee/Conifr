@@ -29,6 +29,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var latLabel: UILabel!
     @IBOutlet weak var longLabel: UILabel!
     @IBOutlet weak var gpsActivityLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     
     //MARK - View Controller Initializated and brought to front
     override func viewDidLoad() {
@@ -88,6 +89,10 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
                 self.longLabel.text = "LONG: " + longText
                 //Setting label text for Motion Activity by mapping first value (most confidence)
                 self.activityLabel.text = locationSample.coreMotionActivityType.map { $0.rawValue }
+                self.timeLabel.text = "\(locationSample.date)"
+                
+                print(locationSample.coreMotionActivityType.map{$0.rawValue})
+                print(locationSample.date)
 
                 switch locationSample.movingState {
                 case .moving:
@@ -97,6 +102,9 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
                 case .uncertain:
                     self.gpsActivityLabel.text = "Uncertain"
                 }
+                
+                
+               
             }
             
         }
@@ -109,6 +117,15 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
         let status = CLLocationManager.authorizationStatus()
         
         handleLocationAuthorizationStatus(status: status)
+    }
+    
+    
+    func pedometer() {
+        
+    }
+    
+    func odometer(){
+        
     }
     
     //Switch for handling all authorization status' (exhaustive)
@@ -175,4 +192,6 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     }
     
 
+    
+    
 }
