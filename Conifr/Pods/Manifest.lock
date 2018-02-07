@@ -22,10 +22,12 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftNotes (1.1.0)
 
 DEPENDENCIES:
   - ArcKit
   - Firebase/Core
+  - SwiftNotes
 
 SPEC CHECKSUMS:
   ArcKit: 47c3ddf87428945b1cf008a518b279a92c7c8bdc
@@ -36,7 +38,8 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftNotes: 51d71568d7515c5c82aa791b88900cf8059b8beb
 
-PODFILE CHECKSUM: 2898961c0fe83a17571020ff27bc114a4d0834bf
+PODFILE CHECKSUM: 3edf91b6d7809f2213d719111e6837c58ed8ae7b
 
 COCOAPODS: 1.3.1

@@ -20,6 +20,21 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need your location to measure your carbon emissions - Always Allow</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need your location to measure your carbon emissions</string>
+	<key>NSLocationUsageDescription</key>
+	<string>We need your location to measure your carbon emissions</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to measure your carbon emissions</string>
+	<key>NSMotionUsageDescription</key>
+	<string>We need your motion to more accurately measure your carbon emissions - Ok</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>Splash</string>
 	<key>UIMainStoryboardFile</key>
@@ -31,8 +46,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

@@ -19,6 +19,8 @@
 		F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */; };
 		F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */; };
 		F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B5F851202A0B6D008B7C72 /* Assets.xcassets */; };
+		F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F4C507C4202A799D00758504 /* vienna-graz-by-car.gpx */; };
+		F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F4C507C6202A804600758504 /* vienna-ring-bikeride.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		F4B5F84F202A0B6D008B7C72 /* Conifr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Conifr.xcdatamodel; sourceTree = "<group>"; };
 		F4B5F851202A0B6D008B7C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4B5F856202A0B6D008B7C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C507C4202A799D00758504 /* vienna-graz-by-car.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vienna-graz-by-car.gpx"; sourceTree = "<group>"; };
+		F4C507C6202A804600758504 /* vienna-ring-bikeride.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vienna-ring-bikeride.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		F4B5F83B202A0B6D008B7C72 = {
 			isa = PBXGroup;
 			children = (
+				F4C507C9202A807A00758504 /* GPX */,
 				F4B5F846202A0B6D008B7C72 /* Conifr */,
 				F4B5F845202A0B6D008B7C72 /* Products */,
 				792D3217D2CF23E25EE8C96D /* Pods */,
@@ -128,6 +133,15 @@
 				F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */,
 			);
 			path = Conifr;
+			sourceTree = "<group>";
+		};
+		F4C507C9202A807A00758504 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				F4C507C6202A804600758504 /* vienna-ring-bikeride.gpx */,
+				F4C507C4202A799D00758504 /* vienna-graz-by-car.gpx */,
+			);
+			path = GPX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,11 @@
 					F4B5F843202A0B6D008B7C72 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -193,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4883F98202A1B9100C15034 /* Main.storyboard in Resources */,
+				F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */,
 				F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */,
+				F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */,
 				F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */,
 				F4883F9A202A1C4700C15034 /* Splash.storyboard in Resources */,
 			);
@@ -227,6 +248,7 @@
 				"${BUILT_PRODUCTS_DIR}/ArcKit/ArcKit.framework",
 				"${PODS_ROOT}/ArcKitCore/ArcKitCore.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNotes/SwiftNotes.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -234,6 +256,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKitCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftNotes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,11 +428,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JXN9JNTRNB;
 				INFOPLIST_FILE = "$(SRCROOT)/Conifr/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ucsc.Conifr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -421,11 +445,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JXN9JNTRNB;
 				INFOPLIST_FILE = "$(SRCROOT)/Conifr/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ucsc.Conifr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
