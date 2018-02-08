@@ -63,7 +63,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="491" height="184"/>
-            <point key="canvasLocation" x="250" y="-20.5"/>
+            <point key="canvasLocation" x="256" y="-21"/>
         </collectionViewCell>
     </objects>
 </document>

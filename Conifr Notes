@@ -1,0 +1,46 @@
+
+
+X = Distance Traveled 
+Y = Distance Walked 
+Z = Distance Driven 
+
+Y+Z=X 
+
+user1 -> X = 3 miles 
+user2 -> X = 17 miles 
+
+started off campus -> ended oncampus 
+started oncampus  -> ended off campus 
+intracampus 
+
+
+gps data coupled with motion activity 
+
+Distance Traveled (by mode)/
+
+
+Ranking: 
+Users that haven't traveled aren't included in ranking 
+Users who have only walked are ranked the highest 
+Users who have only drove are ranked the lowest 
+The winner has walked the most and drove the least 
+The loser has drove the most and walked the least 
+No negatives 
+
+
+Total Emmisions x Distance Traveled = RANKING NUMBER 
+
+If distance traveled is zero then don't rank 
+Distance cannot be <= 0
+But emmisions must be >= 0
+sort by lowest first 
+
+End of the month reporting
+
+Student, Staff, Faculty - IN LOGIN WORKFLOW
+
+
+
+
+
+

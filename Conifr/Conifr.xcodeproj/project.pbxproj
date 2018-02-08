@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C32C6A88E77DDAD66DC7E858 /* Pods_Conifr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */; };
+		F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B82202AD9AA00A85DF9 /* LegModel.swift */; };
+		F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B85202ADC7000A85DF9 /* TripModel.swift */; };
+		F4014B88202ADD3000A85DF9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B87202ADD3000A85DF9 /* UserModel.swift */; };
 		F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC465202A166C00A0D842 /* TabBarController.swift */; };
 		F41DC46A202A171900A0D842 /* MyTripsCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */; };
 		F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */; };
 		F41DC471202A185E00A0D842 /* LeaderboardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */; };
+		F473B4BC202B9AD100A66FA7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F473B4BB202B9AD000A66FA7 /* Info.plist */; };
 		F4883F98202A1B9100C15034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4883F96202A1B9000C15034 /* Main.storyboard */; };
 		F4883F9A202A1C4700C15034 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4883F99202A1C4700C15034 /* Splash.storyboard */; };
 		F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */; };
@@ -29,19 +33,22 @@
 		C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.release.xcconfig"; sourceTree = "<group>"; };
 		D8B4F7739FB840E743BB9E15 /* Pods-Conifr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.debug.xcconfig"; sourceTree = "<group>"; };
 		ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conifr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4014B82202AD9AA00A85DF9 /* LegModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegModel.swift; sourceTree = "<group>"; };
+		F4014B85202ADC7000A85DF9 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		F4014B87202ADD3000A85DF9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F41DC465202A166C00A0D842 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsCollectionVC.swift; sourceTree = "<group>"; };
-		F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyStatsCollectionVC.swift; path = "Conifr/View Controllers/MyStatsCollectionVC.swift"; sourceTree = SOURCE_ROOT; };
-		F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeaderboardCollectionVC.swift; path = "Conifr/View Controllers/LeaderboardCollectionVC.swift"; sourceTree = SOURCE_ROOT; };
+		F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyStatsCollectionVC.swift; path = "View Controllers/MyStatsCollectionVC.swift"; sourceTree = SOURCE_ROOT; };
+		F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeaderboardCollectionVC.swift; path = "View Controllers/LeaderboardCollectionVC.swift"; sourceTree = SOURCE_ROOT; };
+		F473B4BB202B9AD000A66FA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4883F97202A1B9000C15034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Conifr/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4883F99202A1C4700C15034 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
-		F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestingActivityVC.swift; path = "Conifr/View Controllers/TestingActivityVC.swift"; sourceTree = SOURCE_ROOT; };
+		F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestingActivityVC.swift; path = "View Controllers/TestingActivityVC.swift"; sourceTree = SOURCE_ROOT; };
 		F4AD566B202A0C8200C6D321 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4B5F844202A0B6D008B7C72 /* Conifr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conifr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B5F84F202A0B6D008B7C72 /* Conifr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Conifr.xcdatamodel; sourceTree = "<group>"; };
 		F4B5F851202A0B6D008B7C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F4B5F856202A0B6D008B7C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C507C4202A799D00758504 /* vienna-graz-by-car.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vienna-graz-by-car.gpx"; sourceTree = "<group>"; };
 		F4C507C6202A804600758504 /* vienna-ring-bikeride.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vienna-ring-bikeride.gpx"; sourceTree = "<group>"; };
 		F4C507CA202A8E0A00758504 /* TripsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsCell.xib; sourceTree = "<group>"; };
@@ -77,6 +84,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F4014B84202ADC5700A85DF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4014B82202AD9AA00A85DF9 /* LegModel.swift */,
+				F4014B85202ADC7000A85DF9 /* TripModel.swift */,
+				F4014B87202ADD3000A85DF9 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F41DC46B202A173800A0D842 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +117,7 @@
 		F41DC46D202A17E100A0D842 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				F4B5F856202A0B6D008B7C72 /* Info.plist */,
+				F473B4BB202B9AD000A66FA7 /* Info.plist */,
 				F4AD566B202A0C8200C6D321 /* GoogleService-Info.plist */,
 			);
 			path = Plist;
@@ -109,9 +126,14 @@
 		F4B5F83B202A0B6D008B7C72 = {
 			isa = PBXGroup;
 			children = (
+				F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */,
+				F41DC465202A166C00A0D842 /* TabBarController.swift */,
+				F4014B84202ADC5700A85DF9 /* Model */,
 				F4C507CE202A8E1C00758504 /* XIB */,
 				F4C507CF202A8E2C00758504 /* Cells */,
 				F4C507C9202A807A00758504 /* GPX */,
+				F41DC46C202A17BD00A0D842 /* Storyboards */,
+				F41DC46B202A173800A0D842 /* View Controllers */,
 				F4B5F846202A0B6D008B7C72 /* Conifr */,
 				F4B5F845202A0B6D008B7C72 /* Products */,
 				792D3217D2CF23E25EE8C96D /* Pods */,
@@ -131,11 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F41DC46D202A17E100A0D842 /* Plist */,
-				F41DC46C202A17BD00A0D842 /* Storyboards */,
-				F41DC46B202A173800A0D842 /* View Controllers */,
-				F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */,
 				F4B5F851202A0B6D008B7C72 /* Assets.xcassets */,
-				F41DC465202A166C00A0D842 /* TabBarController.swift */,
 				F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */,
 			);
 			path = Conifr;
@@ -233,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F473B4BC202B9AD100A66FA7 /* Info.plist in Resources */,
 				F4883F98202A1B9100C15034 /* Main.storyboard in Resources */,
 				F4C507CC202A8E0B00758504 /* TripsCell.xib in Resources */,
 				F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */,
@@ -270,16 +289,22 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Conifr/Pods-Conifr-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ArcKit/ArcKit.framework",
 				"${PODS_ROOT}/ArcKitCore/ArcKitCore.framework",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftNotes/SwiftNotes.framework",
+				"${BUILT_PRODUCTS_DIR}/Upsurge/Upsurge.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKitCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftNotes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Upsurge.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +344,10 @@
 				F4C507CD202A8E0B00758504 /* TripsCell.swift in Sources */,
 				F41DC46A202A171900A0D842 /* MyTripsCollectionVC.swift in Sources */,
 				F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */,
+				F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */,
+				F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */,
 				F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */,
+				F4014B88202ADD3000A85DF9 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
