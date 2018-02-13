@@ -9,6 +9,9 @@ pod 'Firebase/Core'
 pod 'ArcKit', '~> 5.0.0.pre'
 pod 'ArcKit/LocalStore', '~> 5.0.0.pre'
 pod 'SwiftNotes'
+pod 'PaginatedScrollView'
+pod 'Motion'
+pod 'Material'
 
 # Pods for Conifr
 

@@ -11,10 +11,13 @@
 		F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B82202AD9AA00A85DF9 /* LegModel.swift */; };
 		F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B85202ADC7000A85DF9 /* TripModel.swift */; };
 		F4014B88202ADD3000A85DF9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B87202ADD3000A85DF9 /* UserModel.swift */; };
+		F4103519202E876000F23B21 /* Page1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103518202E876000F23B21 /* Page1VC.swift */; };
 		F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC465202A166C00A0D842 /* TabBarController.swift */; };
 		F41DC46A202A171900A0D842 /* MyTripsCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */; };
 		F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */; };
 		F41DC471202A185E00A0D842 /* LeaderboardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */; };
+		F46161142031406100A1F8E6 /* LoginVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46161132031406100A1F8E6 /* LoginVC1.swift */; };
+		F4616116203146EF00A1F8E6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4616115203146EF00A1F8E6 /* SignUpVC.swift */; };
 		F473B4BC202B9AD100A66FA7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F473B4BB202B9AD000A66FA7 /* Info.plist */; };
 		F4883F98202A1B9100C15034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4883F96202A1B9000C15034 /* Main.storyboard */; };
 		F4883F9A202A1C4700C15034 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4883F99202A1C4700C15034 /* Splash.storyboard */; };
@@ -36,10 +39,13 @@
 		F4014B82202AD9AA00A85DF9 /* LegModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegModel.swift; sourceTree = "<group>"; };
 		F4014B85202ADC7000A85DF9 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		F4014B87202ADD3000A85DF9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F4103518202E876000F23B21 /* Page1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Page1VC.swift; path = "View Controllers/Page1VC.swift"; sourceTree = SOURCE_ROOT; };
 		F41DC465202A166C00A0D842 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsCollectionVC.swift; sourceTree = "<group>"; };
 		F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyStatsCollectionVC.swift; path = "View Controllers/MyStatsCollectionVC.swift"; sourceTree = SOURCE_ROOT; };
 		F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeaderboardCollectionVC.swift; path = "View Controllers/LeaderboardCollectionVC.swift"; sourceTree = SOURCE_ROOT; };
+		F46161132031406100A1F8E6 /* LoginVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC1.swift; path = "View Controllers/LoginVC1.swift"; sourceTree = SOURCE_ROOT; };
+		F4616115203146EF00A1F8E6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpVC.swift; path = "View Controllers/SignUpVC.swift"; sourceTree = SOURCE_ROOT; };
 		F473B4BB202B9AD000A66FA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4883F97202A1B9000C15034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Conifr/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4883F99202A1C4700C15034 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 		F41DC46B202A173800A0D842 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F4616115203146EF00A1F8E6 /* SignUpVC.swift */,
+				F46161132031406100A1F8E6 /* LoginVC1.swift */,
+				F4103518202E876000F23B21 /* Page1VC.swift */,
 				F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */,
 				F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */,
 				F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */,
@@ -291,6 +300,9 @@
 				"${PODS_ROOT}/ArcKitCore/ArcKitCore.framework",
 				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/PaginatedScrollView/PaginatedScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftNotes/SwiftNotes.framework",
 				"${BUILT_PRODUCTS_DIR}/Upsurge/Upsurge.framework",
@@ -302,6 +314,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKitCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PaginatedScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftNotes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Upsurge.framework",
@@ -346,8 +361,11 @@
 				F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */,
 				F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */,
 				F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */,
+				F46161142031406100A1F8E6 /* LoginVC1.swift in Sources */,
 				F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */,
 				F4014B88202ADD3000A85DF9 /* UserModel.swift in Sources */,
+				F4616116203146EF00A1F8E6 /* SignUpVC.swift in Sources */,
+				F4103519202E876000F23B21 /* Page1VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

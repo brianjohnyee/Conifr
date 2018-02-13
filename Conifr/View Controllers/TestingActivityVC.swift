@@ -30,6 +30,8 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var longLabel: UILabel!
     @IBOutlet weak var gpsActivityLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var confidenceLabel: UILabel!
+    
     
     //MARK - View Controller Initializated and brought to front
     override func viewDidLoad() {
@@ -97,8 +99,9 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
                 //Setting label text for lat & long
                 self.latLabel.text = "LAT: " + latitudeText
                 self.longLabel.text = "LONG: " + longText
+                
+                
                 //Setting label text for Motion Activity by mapping first value (most confidence)
-                //self.activityLabel.text = locationSample.coreMotionActivityType.map { $0.rawValue }
                 self.timeLabel.text = "\(locationSample.date)"
                 
 
@@ -171,7 +174,46 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
         //print(bestMatch?.name)
         self.activityLabel.text = (bestMatch?.name).map { $0.rawValue }
         
+    
+        self.confidenceLabel.text = "w/confidence:" + "\(bestMatch?.score)"
+        
+        
+        
         return bestMatch!.name
+        
+        //Gets value with most confidence
+        if let mostConfident = results.first {
+            
+            var confidence = mostConfident.score
+            var gpsMotion = locoSample.movingState
+            
+            
+            //Create Name, Confidence, GPS Motion and Time Dictionaryy
+            //var coupledMotionDataDictionary = Dictionary<String, Any>
+            
+            //Metadata to attach key-value with timestamp
+            //var metadata =
+            
+            
+            
+            //Create confidence Array
+            var confidenceArray = [Double]()
+            
+            //FIX: FORCE UNWRAPPING
+            confidenceArray.append(confidence)
+            
+            if gpsMotion == .moving && mostConfident.name != .stationary {
+                //I am in some motion
+            } else if gpsMotion == .uncertain {
+                //Idk but ignore this data
+            } else if gpsMotion == .stationary && mostConfident.name == .stationary {
+                //I am completely stationary (this is my trip ending condition
+                //if (i have been completely stationary for most than 10 minutes) {
+                    // end the trip and the leg
+                    // push data to be validated
+                //}
+            }
+        }
     }
     
     
