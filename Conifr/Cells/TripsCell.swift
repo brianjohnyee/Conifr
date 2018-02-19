@@ -11,6 +11,7 @@ import MapKit
 class TripsCell: UICollectionViewCell {
     @IBOutlet weak var dateTime: UILabel!
     @IBOutlet weak var dist: UILabel!
+    @IBOutlet var img: UIImageView!
     @IBOutlet weak var mode: UILabel!
     @IBOutlet var tripMap: MKMapView!    /*
      func displayContent(image: UIImage, title: String){

@@ -14,6 +14,7 @@ private let reuseIdentifier = "TripsCell"
 class MyTripsCollectionVC: UICollectionViewController {
 
     var numberItems = [1,2,3,4,5,6,7,8,9]
+    var gang = ["My", "God", "Crdfnsdlnk", "sdfsd", "dsfsdf", "DSdsfsdfsdfsdfsd", "fdsfsdf", "dfsfsdfsfsdf", "dsfsdf"]
     @IBOutlet var ourView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +63,7 @@ class MyTripsCollectionVC: UICollectionViewController {
 
         cell.dateTime.text = "Jumbo"
         cell.dist.text = "ok"
-        cell.mode.text = "no"
+        cell.mode.text = gang[indexPath.row]
         return cell
     }
 

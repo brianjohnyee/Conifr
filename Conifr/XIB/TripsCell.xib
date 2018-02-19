@@ -71,6 +71,7 @@
             <connections>
                 <outlet property="dateTime" destination="s2p-7U-ciQ" id="gZM-iB-NAN"/>
                 <outlet property="dist" destination="0r2-UM-4qW" id="S1t-YO-7vi"/>
+                <outlet property="img" destination="yEM-Cn-8Wa" id="ev4-rJ-L6J"/>
                 <outlet property="mode" destination="Hja-M7-4jX" id="UI4-iq-wbu"/>
                 <outlet property="tripMap" destination="e8H-Nq-eqI" id="GgF-n1-YhE"/>
             </connections>
