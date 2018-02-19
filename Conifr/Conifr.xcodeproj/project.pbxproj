@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5823F0E9203905FE0087397A /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823F0E7203905FE0087397A /* LeaderboardCell.swift */; };
+		5823F0EA203905FE0087397A /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5823F0E8203905FE0087397A /* LeaderboardCell.xib */; };
+		586D0EA0203936B10009D100 /* DetailedTripStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586D0E9F203936B10009D100 /* DetailedTripStatsVC.swift */; };
+		586D0EA32039378F0009D100 /* DetailedTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586D0EA12039378F0009D100 /* DetailedTripCell.swift */; };
+		586D0EA42039378F0009D100 /* DetailedTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586D0EA22039378F0009D100 /* DetailedTripCell.xib */; };
 		C32C6A88E77DDAD66DC7E858 /* Pods_Conifr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */; };
 		F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B82202AD9AA00A85DF9 /* LegModel.swift */; };
 		F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B85202ADC7000A85DF9 /* TripModel.swift */; };
@@ -33,6 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5823F0E7203905FE0087397A /* LeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
+		5823F0E8203905FE0087397A /* LeaderboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
+		586D0E9F203936B10009D100 /* DetailedTripStatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedTripStatsVC.swift; sourceTree = "<group>"; };
+		586D0EA12039378F0009D100 /* DetailedTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedTripCell.swift; sourceTree = "<group>"; };
+		586D0EA22039378F0009D100 /* DetailedTripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedTripCell.xib; sourceTree = "<group>"; };
 		C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.release.xcconfig"; sourceTree = "<group>"; };
 		D8B4F7739FB840E743BB9E15 /* Pods-Conifr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.debug.xcconfig"; sourceTree = "<group>"; };
 		ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conifr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +120,7 @@
 				F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */,
 				F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */,
 				F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */,
+				586D0E9F203936B10009D100 /* DetailedTripStatsVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -181,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				F4C507CA202A8E0A00758504 /* TripsCell.xib */,
+				5823F0E8203905FE0087397A /* LeaderboardCell.xib */,
+				586D0EA22039378F0009D100 /* DetailedTripCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -189,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				F4C507CB202A8E0A00758504 /* TripsCell.swift */,
+				5823F0E7203905FE0087397A /* LeaderboardCell.swift */,
+				586D0EA12039378F0009D100 /* DetailedTripCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -264,7 +279,9 @@
 				F4883F98202A1B9100C15034 /* Main.storyboard in Resources */,
 				F4C507CC202A8E0B00758504 /* TripsCell.xib in Resources */,
 				F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */,
+				586D0EA42039378F0009D100 /* DetailedTripCell.xib in Resources */,
 				F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */,
+				5823F0EA203905FE0087397A /* LeaderboardCell.xib in Resources */,
 				F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */,
 				F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */,
 				F4883F9A202A1C4700C15034 /* Splash.storyboard in Resources */,
@@ -353,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F41DC471202A185E00A0D842 /* LeaderboardCollectionVC.swift in Sources */,
+				5823F0E9203905FE0087397A /* LeaderboardCell.swift in Sources */,
 				F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */,
 				F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */,
 				F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */,
@@ -361,8 +379,10 @@
 				F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */,
 				F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */,
 				F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */,
+				586D0EA32039378F0009D100 /* DetailedTripCell.swift in Sources */,
 				F46161142031406100A1F8E6 /* LoginVC1.swift in Sources */,
 				F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */,
+				586D0EA0203936B10009D100 /* DetailedTripStatsVC.swift in Sources */,
 				F4014B88202ADD3000A85DF9 /* UserModel.swift in Sources */,
 				F4616116203146EF00A1F8E6 /* SignUpVC.swift in Sources */,
 				F4103519202E876000F23B21 /* Page1VC.swift in Sources */,
