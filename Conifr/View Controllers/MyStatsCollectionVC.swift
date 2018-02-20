@@ -58,7 +58,7 @@ class MyStatsCollectionVC: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
         // Configure the cell
-        cell.backgroundColor = UIColor.blue
+        cell.backgroundColor = UIColor.white
         return cell
     }
 
