@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9AEC69F9203B892A00987D0F /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEC69F8203B892A00987D0F /* LeaderboardCell.xib */; };
+		9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */; };
 		9AEC69FB203B893500987D0F /* DetailedTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEC69FA203B893500987D0F /* DetailedTripCell.xib */; };
 		9AEC69FD203B893E00987D0F /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC69FC203B893E00987D0F /* LeaderboardCell.swift */; };
 		9AEC69FF203B894300987D0F /* DetailedTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC69FE203B894200987D0F /* DetailedTripCell.swift */; };
@@ -40,7 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9AEC69F8203B892A00987D0F /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeaderboardCell.xib; path = ../../../../Conifr/Conifr/XIB/LeaderboardCell.xib; sourceTree = "<group>"; };
+		9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
 		9AEC69FA203B893500987D0F /* DetailedTripCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedTripCell.xib; sourceTree = "<group>"; };
 		9AEC69FC203B893E00987D0F /* LeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
 		9AEC69FE203B894200987D0F /* DetailedTripCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedTripCell.swift; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C507CA202A8E0A00758504 /* TripsCell.xib */,
-				9AEC69F8203B892A00987D0F /* LeaderboardCell.xib */,
+				9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */,
 				9AEC69FA203B893500987D0F /* DetailedTripCell.xib */,
 				9AEC6A05203B94BF00987D0F /* StatsCell.xib */,
 			);
@@ -287,7 +287,7 @@
 				9AEC6A07203B94BF00987D0F /* StatsCell.xib in Resources */,
 				F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */,
 				F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */,
-				9AEC69F9203B892A00987D0F /* LeaderboardCell.xib in Resources */,
+				9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */,
 				9AEC69FB203B893500987D0F /* DetailedTripCell.xib in Resources */,
 				F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */,
 				F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */,
