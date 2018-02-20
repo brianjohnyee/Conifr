@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */; };
+		9A2E3AD9203CEBE900F3D40F /* LeaderboardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */; };
 		9AEC69FB203B893500987D0F /* DetailedTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEC69FA203B893500987D0F /* DetailedTripCell.xib */; };
 		9AEC69FD203B893E00987D0F /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC69FC203B893E00987D0F /* LeaderboardCell.swift */; };
 		9AEC69FF203B894300987D0F /* DetailedTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC69FE203B894200987D0F /* DetailedTripCell.swift */; };
 		9AEC6A01203B894E00987D0F /* DetailedTripStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC6A00203B894E00987D0F /* DetailedTripStatsVC.swift */; };
-		9AEC6A03203B895B00987D0F /* LeaderboardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC6A02203B895A00987D0F /* LeaderboardCollectionVC.swift */; };
 		9AEC6A06203B94BF00987D0F /* StatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC6A04203B94BF00987D0F /* StatsCell.swift */; };
 		9AEC6A07203B94BF00987D0F /* StatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEC6A05203B94BF00987D0F /* StatsCell.xib */; };
 		C32C6A88E77DDAD66DC7E858 /* Pods_Conifr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */; };
@@ -41,11 +41,11 @@
 
 /* Begin PBXFileReference section */
 		9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
+		9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCollectionVC.swift; sourceTree = "<group>"; };
 		9AEC69FA203B893500987D0F /* DetailedTripCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedTripCell.xib; sourceTree = "<group>"; };
 		9AEC69FC203B893E00987D0F /* LeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
 		9AEC69FE203B894200987D0F /* DetailedTripCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedTripCell.swift; sourceTree = "<group>"; };
 		9AEC6A00203B894E00987D0F /* DetailedTripStatsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedTripStatsVC.swift; sourceTree = "<group>"; };
-		9AEC6A02203B895A00987D0F /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeaderboardCollectionVC.swift; path = "../../../../Conifr/Conifr/View Controllers/LeaderboardCollectionVC.swift"; sourceTree = "<group>"; };
 		9AEC6A04203B94BF00987D0F /* StatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCell.swift; sourceTree = "<group>"; };
 		9AEC6A05203B94BF00987D0F /* StatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsCell.xib; sourceTree = "<group>"; };
 		C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 				F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */,
 				F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */,
 				F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */,
-				9AEC6A02203B895A00987D0F /* LeaderboardCollectionVC.swift */,
+				9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */,
 				9AEC6A00203B894E00987D0F /* DetailedTripStatsVC.swift */,
 			);
 			path = "View Controllers";
@@ -376,12 +376,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2E3AD9203CEBE900F3D40F /* LeaderboardCollectionVC.swift in Sources */,
 				9AEC69FD203B893E00987D0F /* LeaderboardCell.swift in Sources */,
 				F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */,
 				F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */,
 				F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */,
 				F4C507CD202A8E0B00758504 /* TripsCell.swift in Sources */,
-				9AEC6A03203B895B00987D0F /* LeaderboardCollectionVC.swift in Sources */,
 				F41DC46A202A171900A0D842 /* MyTripsCollectionVC.swift in Sources */,
 				F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */,
 				F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */,
