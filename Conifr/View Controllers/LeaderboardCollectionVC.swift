@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "LeaderboardCell"
 
 class LeaderboardCollectionVC: UICollectionViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -13,7 +13,6 @@ class LeaderboardCell: UICollectionViewCell {
     @IBOutlet weak var Avatar: UIImageView!
     @IBOutlet weak var Score: UILabel!
     @IBOutlet weak var Name: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layer.cornerRadius = 12

@@ -43,7 +43,7 @@ class DetailedTripStatsVC: UICollectionViewController {
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 20
+        return 5
     }
     
     

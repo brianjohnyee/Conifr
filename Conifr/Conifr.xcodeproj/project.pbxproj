@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58647FBD203F2D1A00C887AC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58647FBB203F2D1A00C887AC /* ProfileVC.swift */; };
 		9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */; };
 		9A2E3AD9203CEBE900F3D40F /* LeaderboardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */; };
 		9AEC69FB203B893500987D0F /* DetailedTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEC69FA203B893500987D0F /* DetailedTripCell.xib */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58647FBB203F2D1A00C887AC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
 		9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCollectionVC.swift; sourceTree = "<group>"; };
 		9AEC69FA203B893500987D0F /* DetailedTripCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedTripCell.xib; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */,
 				9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */,
 				9AEC6A00203B894E00987D0F /* DetailedTripStatsVC.swift */,
+				58647FBB203F2D1A00C887AC /* ProfileVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				9A2E3AD9203CEBE900F3D40F /* LeaderboardCollectionVC.swift in Sources */,
 				9AEC69FD203B893E00987D0F /* LeaderboardCell.swift in Sources */,
 				F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */,
+				58647FBD203F2D1A00C887AC /* ProfileVC.swift in Sources */,
 				F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */,
 				F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */,
 				F4C507CD202A8E0B00758504 /* TripsCell.swift in Sources */,
