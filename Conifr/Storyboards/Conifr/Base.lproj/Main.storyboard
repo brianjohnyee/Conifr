@@ -15,9 +15,9 @@
         <!--My Stats-->
         <scene sceneID="nDc-3p-p2y">
             <objects>
-                <collectionViewController id="aFm-IR-daK" userLabel="My Stats" customClass="MyStatsCollectionVC" customModule="Conifr" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="Stats" id="aFm-IR-daK" userLabel="My Stats" customClass="MyStatsCollectionVC" customModule="Conifr" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="WKF-80-SlE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P3f-ur-JhS">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="aFm-IR-daK" id="5Rd-jh-x8h"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="qOw-Mo-Edb"/>
+                    <tabBarItem key="tabBarItem" title="My Stats" image="Stats2" id="qOw-Mo-Edb"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKg-9J-VlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,7 +286,7 @@
             <objects>
                 <collectionViewController id="Pma-bN-bnU" userLabel="Leadboard" customClass="LeaderboardCollectionVC" customModule="Conifr" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Etr-KH-5Rj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8Ja-4e-AJq">
@@ -310,7 +310,7 @@
                             <outlet property="delegate" destination="Pma-bN-bnU" id="ird-cJ-IpM"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="eG3-Bs-MqK"/>
+                    <tabBarItem key="tabBarItem" title="Leaderboards" image="Leaderboard2" id="eG3-Bs-MqK"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tJ-au-9qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,7 +321,7 @@
             <objects>
                 <collectionViewController id="eTf-b0-F7U" userLabel="My Trips" customClass="MyTripsCollectionVC" customModule="Conifr" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ant-gO-7rY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tBU-DZ-Kkh">
@@ -341,7 +341,7 @@
                             <outlet property="delegate" destination="eTf-b0-F7U" id="xRC-E0-VS4"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="gR0-XK-r0K" userLabel="My Trips"/>
+                    <tabBarItem key="tabBarItem" title="Trips" image="Trips2" id="gR0-XK-r0K" userLabel="My Trips"/>
                     <connections>
                         <outlet property="collectionView" destination="Ant-gO-7rY" id="w9r-dx-if0"/>
                         <outlet property="ourView" destination="Ant-gO-7rY" id="F05-th-RBC"/>
@@ -371,6 +371,7 @@
         <scene sceneID="YVl-ZA-5Nm">
             <objects>
                 <tabBarController id="9Ru-f6-Q3e" customClass="TabBarController" customModule="Conifr" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yCR-tf-x64">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -610,9 +611,12 @@
         <image name="Bringing Carbon" width="460" height="46"/>
         <image name="Conifr" width="410" height="124"/>
         <image name="Gradient_Background" width="750" height="1334"/>
+        <image name="Leaderboard2" width="26" height="26"/>
         <image name="Sign Up Button" width="306" height="76"/>
         <image name="SignUp" width="676" height="246"/>
         <image name="SignUp - Extended" width="676" height="444"/>
+        <image name="Stats2" width="40" height="40"/>
+        <image name="Trips2" width="30" height="30"/>
         <image name="conifr_small" width="512" height="512"/>
         <image name="cropped-Conifr-Logo-No-Text-nobkg" width="360" height="360"/>
     </resources>
