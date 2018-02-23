@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import MapKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "TripsCell"
 
 class MyTripsCollectionVC: UICollectionViewController {
 
+    var numberItems = [1,2,3,4,5,6,7,8,9]
+    var gang = ["My", "God", "Crdfnsdlnk", "sdfsd", "dsfsdf", "DSdsfsdfsdfsdfsd", "fdsfsdf", "dfsfsdfsfsdf", "dsfsdf"]
+    @IBOutlet var ourView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,8 +23,9 @@ class MyTripsCollectionVC: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+    self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "TripsCell")
+ 
+        self.collectionView!.register(UINib(nibName: "TripsCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         // Do any additional setup after loading the view.
     }
 
@@ -43,20 +48,22 @@ class MyTripsCollectionVC: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return numberItems.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! TripsCell
         // Configure the cell
-    
+
+        cell.dateTime.text = "Jumbo"
+        cell.dist.text = "ok"
+        cell.mode.text = gang[indexPath.row]
         return cell
     }
 

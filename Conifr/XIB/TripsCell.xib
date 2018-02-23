@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TripsCell" customModule="Conifr" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TripsCell" id="gTV-IL-0wX" customClass="TripsCell" customModule="Conifr" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="338" height="311"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -34,7 +34,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yEM-Cn-8Wa" userLabel="Distance Icon">
                         <rect key="frame" x="13" y="51" width="10" height="16"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hja-M7-4jX">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hja-M7-4jX" customClass="TripsCall" customModule="Conifr" customModuleProvider="target">
                         <rect key="frame" x="18" y="69" width="49" height="26"/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                         <color key="textColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,7 +63,19 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="491" height="184"/>
-            <point key="canvasLocation" x="256" y="-21"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                    <real key="value" value="7"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="dateTime" destination="s2p-7U-ciQ" id="gZM-iB-NAN"/>
+                <outlet property="dist" destination="0r2-UM-4qW" id="S1t-YO-7vi"/>
+                <outlet property="img" destination="yEM-Cn-8Wa" id="ev4-rJ-L6J"/>
+                <outlet property="mode" destination="Hja-M7-4jX" id="UI4-iq-wbu"/>
+                <outlet property="tripMap" destination="e8H-Nq-eqI" id="GgF-n1-YhE"/>
+            </connections>
+            <point key="canvasLocation" x="70" y="-26"/>
         </collectionViewCell>
     </objects>
 </document>
