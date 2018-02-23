@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var listDesc = ["Name", "user@ucsc.edu", "Rachel Carson College", "Clear Data", "About Conifr", "Conact us @", "Legal"]
         var myIndex = 0
     
+    
     public func tableView( _ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 7
@@ -26,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = list[indexPath.row]
-        self.tableView.contentInset = UIEdgeInsetsMake(120, 0, 0, 0)
+        self.tableView.contentInset = UIEdgeInsetsMake(105, 0, 0, 0)
         return(cell)
     }
     
@@ -41,6 +42,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.tableFooterView = UIView()
+        tableView.rowHeight = 60
+        
+        
 //        self.view.backgroundColor = UIColor.red;
 
     
