@@ -12,12 +12,14 @@ import MapKit
 private let reuseIdentifier = "TripsCell"
 
 class MyTripsCollectionVC: UICollectionViewController {
-
+    
     var numberItems = [1,2,3,4,5,6,7,8,9]
     var gang = ["My", "God", "Crdfnsdlnk", "sdfsd", "dsfsdf", "DSdsfsdfsdfsdfsd", "fdsfsdf", "dfsfsdfsfsdf", "dsfsdf"]
     @IBOutlet var ourView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.topItem?.title = "My Trips"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -66,6 +68,8 @@ class MyTripsCollectionVC: UICollectionViewController {
         cell.mode.text = gang[indexPath.row]
         return cell
     }
+
+    
 
     // MARK: UICollectionViewDelegate
 
