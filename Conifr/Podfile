@@ -6,6 +6,8 @@ target 'Conifr' do
 use_frameworks!
 	
 pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
 pod 'ArcKit', '~> 5.0.0.pre'
 pod 'ArcKit/LocalStore', '~> 5.0.0.pre'
 pod 'SwiftNotes'

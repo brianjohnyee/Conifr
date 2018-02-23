@@ -89,8 +89,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
             if let location = self.loco.rawLocation as? CLLocation {
                
                 var locationSample = self.loco.locomotionSample()
-               // print(locationSample.location)
-                //print(locationSample.location?.speed)
+                
                 
                 //Creating strings from lat/long data
                 var latitudeText:String = "\(locationSample.location?.coordinate.latitude)"
@@ -155,20 +154,14 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     }
     
     public func classifyWithConfidence(classifier: ActivityTypeClassifier,locoSample: LocomotionSample) -> ActivityTypeName {
-        
         // classify a locomotion sample
         let results = classifier.classify(locoSample)
         
         // get the best match activity type
         let bestMatch = results.first
-        print(bestMatch?.name)
+        print(bestMatch)
         
-       // print(results.array)
-        if results.first?.name == ActivityTypeName.transport {
-            //print(bestMatch)
-        } else if results.first?.name == ActivityTypeName.cycling {
-            //print(bestMatch)
-        }
+        
         
         // print the best match type's name ("walking", "car", etc)
         //print(bestMatch?.name)
@@ -177,8 +170,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     
         self.confidenceLabel.text = "w/confidence:" + "\(bestMatch?.score)"
         
-        
-        
+
         return bestMatch!.name
         
         //Gets value with most confidence
@@ -226,6 +218,8 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
         
         
     }
+    
+    
     
     //=
     
@@ -282,7 +276,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     //Handles location changes (GPS - not Motion chip)
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let currentLocation = locations.last {
-            print("My coordinates are: \(currentLocation.coordinate.latitude), \(currentLocation.coordinate.longitude)")
+           // print("My coordinates are: \(currentLocation.coordinate.latitude), \(currentLocation.coordinate.longitude)")
             locationManager.stopUpdatingLocation()
         }
     }
