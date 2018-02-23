@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B32B2C0F203C0B1900F0E8B0 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32B2C0E203C0B1900F0E8B0 /* ViewController2.swift */; };
+		B3645CC8202C3DE10027DF8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3645CC7202C3DE10027DF8F /* ViewController.swift */; };
 		C32C6A88E77DDAD66DC7E858 /* Pods_Conifr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */; };
 		F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B82202AD9AA00A85DF9 /* LegModel.swift */; };
 		F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B85202ADC7000A85DF9 /* TripModel.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B32B2C0E203C0B1900F0E8B0 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		B3645CC7202C3DE10027DF8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.release.xcconfig"; sourceTree = "<group>"; };
 		D8B4F7739FB840E743BB9E15 /* Pods-Conifr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.debug.xcconfig"; sourceTree = "<group>"; };
 		ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conifr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,8 @@
 		F41DC46B202A173800A0D842 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B3645CC7202C3DE10027DF8F /* ViewController.swift */,
+				B32B2C0E203C0B1900F0E8B0 /* ViewController2.swift */,
 				F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */,
 				F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */,
 				F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */,
@@ -343,7 +349,9 @@
 				F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */,
 				F4C507CD202A8E0B00758504 /* TripsCell.swift in Sources */,
 				F41DC46A202A171900A0D842 /* MyTripsCollectionVC.swift in Sources */,
+				B3645CC8202C3DE10027DF8F /* ViewController.swift in Sources */,
 				F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */,
+				B32B2C0F203C0B1900F0E8B0 /* ViewController2.swift in Sources */,
 				F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */,
 				F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */,
 				F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */,
@@ -478,7 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JXN9JNTRNB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Conifr/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -495,7 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JXN9JNTRNB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Conifr/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
