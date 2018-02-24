@@ -24,10 +24,10 @@ class Leg {
     
     //MARK: Initialization
     
-    init?(legID: String, totalDistance: Double, totalC02Emission:Double, modeOfTransportation: String, startTime: Double, endTime: Double, startLocation: CLLocationCoordinate2D, endLocation: CLLocationCoordinate2D) {
+    init?(legID: String, totalDistance: Double, totalC02Emission: Double, modeOfTransportation: String, startTime: Double, endTime: Double, startLocation: CLLocationCoordinate2D, endLocation: CLLocationCoordinate2D) {
         
         //Initialization should fail if distance is less than zero or total C02 emission is less than 0 or mode of transportation is empty or start/end time is less than or equal to zero
-        if legID == "" ,totalDistance < 0 || totalC02Emission < 0 || modeOfTransportation == "" || startTime <= 0 || endTime <= 0 {
+        if legID == "" || totalDistance < 0 || totalC02Emission < 0 || modeOfTransportation == "" || startTime <= 0 || endTime <= 0 {
             return nil
         }
 
