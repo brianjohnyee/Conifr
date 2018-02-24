@@ -14,6 +14,7 @@ pod 'SwiftNotes'
 pod 'PaginatedScrollView'
 pod 'Motion'
 pod 'Material'
+pod 'Floaty'
 
 # Pods for Conifr
 

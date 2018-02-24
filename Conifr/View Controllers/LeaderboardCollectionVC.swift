@@ -15,8 +15,6 @@ class LeaderboardCollectionVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
@@ -28,6 +26,22 @@ class LeaderboardCollectionVC: UICollectionViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Leaderboard"
+        let profileIcon = UIBarButtonItem(image: #imageLiteral(resourceName: "Profile Icon"), style: .plain, target: self, action: #selector(pushProfile(sender:)))
+        profileIcon.largeContentSizeImage = #imageLiteral(resourceName: "Profile Icon")
+        profileIcon.largeContentSizeImageInsets.top = 2
+        profileIcon.tintColor = UIColor(red:86/255.0, green:86/255.0, blue:86/255.0,  alpha:1)
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItem = profileIcon
+    }
+    
+    @objc func pushProfile(sender: UIBarButtonItem){
+        let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "profile") as! ProfileVC
+        
+        navigationController?.pushViewController(profileVC, animated: true)
+    }
+
 
     /*
     // MARK: - Navigation

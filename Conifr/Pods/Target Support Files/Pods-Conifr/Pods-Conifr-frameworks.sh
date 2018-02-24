@@ -136,6 +136,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ArcKit/ArcKit.framework"
   install_framework "${PODS_ROOT}/ArcKitCore/ArcKitCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
@@ -151,6 +152,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ArcKit/ArcKit.framework"
   install_framework "${PODS_ROOT}/ArcKitCore/ArcKitCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"

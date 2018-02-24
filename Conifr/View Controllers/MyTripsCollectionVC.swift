@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import Floaty
 
 private let reuseIdentifier = "TripsCell"
 
@@ -19,34 +20,50 @@ class MyTripsCollectionVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.topItem?.title = "My Trips"
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
         // Register cell classes
-    self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "TripsCell")
+        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "TripsCell")
  
         self.collectionView!.register(UINib(nibName: "TripsCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         // Do any additional setup after loading the view.
+        
+        let floaty = Floaty()
+        floaty.addItem("Track my trip", icon: #imageLiteral(resourceName: "Profile Icon"), handler: { item in
+            let alert = UIAlertController(title: "Hey", message: "I'm hungry...", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Me too", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            floaty.close()
+        })
+        floaty.addItem("Add a trip", icon: #imageLiteral(resourceName: "Profile Icon"), handler: { item in
+            let alert = UIAlertController(title: "Hey", message: "I'm hungry...", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Me too", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            floaty.close()
+        })
+        
+        floaty.paddingY = 60
+        self.view.addSubview(floaty)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "My Trips"
+        let profileIcon = UIBarButtonItem(image: #imageLiteral(resourceName: "Profile Icon"), style: .plain, target: self, action: #selector(pushProfile(sender:)))
+        profileIcon.largeContentSizeImage = #imageLiteral(resourceName: "Profile Icon")
+        profileIcon.largeContentSizeImageInsets.top = 2
+        profileIcon.tintColor = UIColor(red:86/255.0, green:86/255.0, blue:86/255.0,  alpha:1)
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItem = profileIcon
     }
-    */
 
-    // MARK: UICollectionViewDataSource
+    @objc func pushProfile(sender: UIBarButtonItem){
+        let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "profile") as! ProfileVC
+        
+        navigationController?.pushViewController(profileVC, animated: true)
+    }
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections

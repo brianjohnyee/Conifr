@@ -11,6 +11,7 @@ import ArcKit
 import CoreLocation
 import CoreMotion
 import SwiftNotes
+import Floaty
 
 
 //API KEY FOR ARCKIT: 3ca710a0adf94482af9837f1361bf882
@@ -43,6 +44,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
 
         getLocation()
         setUpLocomotion()
+        
         
         
         }
