@@ -82,7 +82,8 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
                 self.distance.append(dist / 1609.34)
                 
                 print("distance = \(self.distance[self.count - 2]) m")
-               
+                self.distances += (self.distance[self.count-2])
+                print("total distance = \(self.distances)")
                 // source item important for getting directions 11
                 let sourceItem = MKMapItem(placemark: sourcePlacemark)
                 let destItem = MKMapItem(placemark: destPlacemark)
@@ -106,7 +107,7 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
                     let route = response.routes[0]
                     self.mapkitview.add(route.polyline,level: .aboveRoads)
                     let rekt  = route.polyline.boundingMapRect
-                    self.mapkitview.setRegion(MKCoordinateRegionForMapRect(rekt), animated: true)
+                  //  self.mapkitview.setRegion(MKCoordinateRegionForMapRect(rekt), animated: true)
                     
                     
                 })
@@ -139,9 +140,9 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
                 
                 self.distance.append(dist / 1609.34)
                 
-                print("distance = \(self.distance[self.count - 2]) m")
-                distances += (self.distance[self.count-2])
-                print(distances)
+                print("trip distance = \(self.distance[self.count - 2]) m")
+                distances += (distance[self.count-2])
+                print("total distance = \(distances)")
                 
                 // source item important for getting directions 11
                 let sourceItem = MKMapItem(placemark: sourcePlacemark)
