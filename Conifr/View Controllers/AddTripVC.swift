@@ -32,7 +32,7 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
         let span = MKCoordinateSpanMake(0.075, 0.075)
         let coodinate = CLLocationCoordinate2DMake(36.971, -122.0308)
         let region = MKCoordinateRegion(center: coodinate, span: span)
-        self.mapkitview.setRegion(region, animated: true)
+        self.mapkitview.setRegion(region, animated: false)
 
         // Do any additional setup after loading the view.
     }
@@ -45,6 +45,8 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
     
     var count = 0
     var coord = [CLLocationCoordinate2D]()
+    var distance = [Double]()
+    var distances = Double()
     @IBAction func userInput(_ sender: Any) {
         count += 1
         
@@ -73,7 +75,14 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
                 // mapkit placemarks
                 let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates)
                 let destPlacemark = MKPlacemark(coordinate: destCoordinates)
+                let test1 = CLLocation(latitude: sourceCoordinates.latitude,longitude: sourceCoordinates.longitude)
+                let test2 = CLLocation(latitude: destCoordinates.latitude, longitude: destCoordinates.longitude)
+                var dist : CLLocationDistance = test1.distance(from: test2)
                 
+                self.distance.append(dist / 1609.34)
+                
+                print("distance = \(self.distance[self.count - 2]) m")
+               
                 // source item important for getting directions 11
                 let sourceItem = MKMapItem(placemark: sourcePlacemark)
                 let destItem = MKMapItem(placemark: destPlacemark)
@@ -124,6 +133,15 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
                 // mapkit placemarks
                 let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates)
                 let destPlacemark = MKPlacemark(coordinate: destCoordinates)
+                let test1 = CLLocation(latitude: sourceCoordinates.latitude,longitude: sourceCoordinates.longitude)
+                let test2 = CLLocation(latitude: destCoordinates.latitude, longitude: destCoordinates.longitude)
+                var dist : CLLocationDistance = test1.distance(from: test2)
+                
+                self.distance.append(dist / 1609.34)
+                
+                print("distance = \(self.distance[self.count - 2]) m")
+                distances += (self.distance[self.count-2])
+                print(distances)
                 
                 // source item important for getting directions 11
                 let sourceItem = MKMapItem(placemark: sourcePlacemark)
