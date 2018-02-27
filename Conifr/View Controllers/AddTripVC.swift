@@ -104,6 +104,54 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
 
     }
     
+    @IBAction func addPin(_ sender: UILongPressGestureRecognizer) {
+        if (sender.state == .ended){
+        count += 1
+        print (count)
+        let location = sender.location(in: self.mapkitview)
+        let hold = self.mapkitview.convert(location, toCoordinateFrom: self.mapkitview)
+        self.coord.append(hold)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coord[self.count - 1]
+        self.mapkitview.addAnnotation(annotation)
+        if(self.count >= 2){
+            let sourceCoordinates = self.coord[self.count - 2]
+            let destCoordinates = self.coord[self.count - 1]
+            // mapkit placemarks
+            let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates)
+            let destPlacemark = MKPlacemark(coordinate: destCoordinates)
+            
+            // source item important for getting directions 11
+            let sourceItem = MKMapItem(placemark: sourcePlacemark)
+            let destItem = MKMapItem(placemark: destPlacemark)
+            
+            let directionRequest = MKDirectionsRequest()
+            directionRequest.source = sourceItem
+            directionRequest.destination = destItem
+            directionRequest.transportType = .any
+            // EOIWNGEOIGNROREG
+            
+            let directions = MKDirections(request: directionRequest)
+            directions.calculate(completionHandler: {
+                response, error in
+                guard let response = response else {
+                    if let error = error{
+                        print("sometihng went wrong")
+                    }
+                    return
+                }
+                
+                let route = response.routes[0]
+                self.mapkitview.add(route.polyline,level: .aboveRoads)
+                let rekt  = route.polyline.boundingMapRect
+                self.mapkitview.setRegion(MKCoordinateRegionForMapRect(rekt), animated: true)
+                
+                
+            })
+        }
+        }
+    }
+    
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay)-> MKOverlayRenderer{
         let renderer = MKPolylineRenderer(overlay: overlay)
         renderer.strokeColor = UIColor.blue
