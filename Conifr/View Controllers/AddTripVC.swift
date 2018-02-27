@@ -67,7 +67,6 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
                 let sourceCoordinates = self.coord[self.count - 2]
                 let destCoordinates = self.coord[self.count - 1]
                 // mapkit placemarks
-                // assume these are the ends of trips to show on the map. dont know why it is ! 10:52
                 let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates)
                 let destPlacemark = MKPlacemark(coordinate: destCoordinates)
                 
@@ -81,8 +80,6 @@ class AddTripVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
                 directionRequest.transportType = .any
                 // EOIWNGEOIGNROREG
                 
-                
-                // 14 minutes no clue what just happened
                 let directions = MKDirections(request: directionRequest)
                 directions.calculate(completionHandler: {
                     response, error in
