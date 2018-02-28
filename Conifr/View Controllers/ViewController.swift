@@ -43,6 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         self.tableView.tableFooterView = UIView()
         tableView.rowHeight = 60
+
         
         
 //        self.view.backgroundColor = UIColor.red;

@@ -240,15 +240,30 @@
                                     <outlet property="delegate" destination="PmM-dv-s8m" id="vSN-Dm-2vJ"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ConifrLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gg1-qq-uxN">
+                                <rect key="frame" x="124" y="519" width="127" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq3-Xb-p8C">
+                                <rect key="frame" x="158" y="629" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7X-aP-h4Q">
-                                <rect key="frame" x="16" y="61" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="16" y="45" width="22" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="&lt;"/>
                                 <connections>
                                     <segue destination="9Ru-f6-Q3e" kind="show" id="7D5-7w-SYp"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profile Icon" translatesAutoresizingMaskIntoConstraints="NO" id="rcf-3c-awh">
+                                <rect key="frame" x="169" y="40" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -270,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99Y-JF-GeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205.5999999999999" y="1609.745127436282"/>
+            <point key="canvasLocation" x="925.60000000000002" y="1614.2428785607199"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="gJ1-gD-82Z">
@@ -371,4 +386,8 @@
             <point key="canvasLocation" x="-970" y="699"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ConifrLogo.png" width="512" height="512"/>
+        <image name="Profile Icon" width="38" height="38"/>
+    </resources>
 </document>
