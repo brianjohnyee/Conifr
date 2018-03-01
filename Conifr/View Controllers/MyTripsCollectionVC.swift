@@ -59,6 +59,7 @@ class MyTripsCollectionVC: UICollectionViewController {
         profileIcon.largeContentSizeImageInsets.top = 2
         profileIcon.tintColor = UIColor(red:86/255.0, green:86/255.0, blue:86/255.0,  alpha:1)
         self.navigationController?.navigationBar.topItem?.rightBarButtonItem = profileIcon
+        
     }
 
     @objc func pushProfile(sender: UIBarButtonItem){
