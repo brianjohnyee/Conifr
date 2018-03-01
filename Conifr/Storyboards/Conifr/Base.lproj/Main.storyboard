@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hil-g9-X4b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u6X-8F-OON">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="aFm-IR-daK" id="5Rd-jh-x8h"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="qOw-Mo-Edb"/>
+                    <tabBarItem key="tabBarItem" title="My Stats" image="My Stats Icon" id="qOw-Mo-Edb"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKg-9J-VlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,7 +310,7 @@
                             <outlet property="delegate" destination="Pma-bN-bnU" id="ird-cJ-IpM"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="eG3-Bs-MqK"/>
+                    <tabBarItem key="tabBarItem" title="Leaderboard" image="Leaderboard Icon" id="eG3-Bs-MqK"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tJ-au-9qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -341,7 +341,7 @@
                             <outlet property="delegate" destination="eTf-b0-F7U" id="xRC-E0-VS4"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="gR0-XK-r0K" userLabel="My Trips"/>
+                    <tabBarItem key="tabBarItem" title="Trips" image="Trips Icon" id="gR0-XK-r0K" userLabel="My Trips"/>
                     <connections>
                         <outlet property="collectionView" destination="Ant-gO-7rY" id="w9r-dx-if0"/>
                         <outlet property="ourView" destination="Ant-gO-7rY" id="F05-th-RBC"/>
@@ -358,14 +358,40 @@
                     <view key="view" contentMode="scaleToFill" id="bRC-JY-8Ku">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eey-14-4Ef">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="GAz-oR-z0e">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GAz-oR-z0e" id="Uwb-x2-EDA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1xR-Hk-fQT" id="Wgh-o9-Snp"/>
+                                    <outlet property="delegate" destination="1xR-Hk-fQT" id="M0t-xC-PaD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.66523791610000005" blue="0.13759619619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eey-14-4Ef" firstAttribute="top" secondItem="bRC-JY-8Ku" secondAttribute="top" id="Vig-0Q-Mvs"/>
+                            <constraint firstItem="eey-14-4Ef" firstAttribute="trailing" secondItem="iIP-kl-5eY" secondAttribute="trailing" id="Yx7-xc-pkX"/>
+                            <constraint firstItem="eey-14-4Ef" firstAttribute="bottom" secondItem="iIP-kl-5eY" secondAttribute="bottom" id="nc6-NI-oNx"/>
+                            <constraint firstItem="eey-14-4Ef" firstAttribute="leading" secondItem="iIP-kl-5eY" secondAttribute="leading" id="ryf-I1-Coe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iIP-kl-5eY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ufl-Ln-ucz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTP-Ig-fnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2422" y="1478"/>
+            <point key="canvasLocation" x="-2423.1999999999998" y="1477.5112443778112"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qpY-XA-HuX">
@@ -398,7 +424,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsc-FU-xhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1468" y="1750.9745127436283"/>
+            <point key="canvasLocation" x="-2255" y="2588"/>
+        </scene>
+        <!--Add TripVC-->
+        <scene sceneID="DQh-uW-Nrt">
+            <objects>
+                <viewController id="LWf-I9-9HL" customClass="AddTripVC" customModule="Conifr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mlS-hu-v0f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Blm-Ox-kFO">
+                                <rect key="frame" x="0.0" y="341" width="375" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4Kt-Il-LiG" appends="YES" id="3He-46-dAf"/>
+                                </connections>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvG-Rh-Cf0">
+                                <rect key="frame" x="0.0" y="136" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1a-Hj-CwF">
+                                <rect key="frame" x="281" y="136" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="userInput:" destination="LWf-I9-9HL" eventType="touchUpInside" id="fLU-VR-b93"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xiS-LU-epK"/>
+                    </view>
+                    <connections>
+                        <outlet property="address" destination="wvG-Rh-Cf0" id="DdN-0v-M2o"/>
+                        <outlet property="mapkitview" destination="Blm-Ox-kFO" id="CrH-SM-vme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3P-7D-x9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="4Kt-Il-LiG">
+                    <connections>
+                        <action selector="addPin:" destination="LWf-I9-9HL" id="EGe-HA-61Q"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1229.5999999999999" y="2692.8035982008996"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qRU-d8-bgQ">
@@ -436,7 +511,7 @@
             <objects>
                 <tabBarController id="9Ru-f6-Q3e" customClass="TabBarController" customModule="Conifr" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Q4M-4N-Nhq"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yCR-tf-x64">
+                    <tabBar key="tabBar" tag="1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yCR-tf-x64">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -675,9 +750,12 @@
         <image name="Bringing Carbon" width="460" height="46"/>
         <image name="Conifr" width="410" height="124"/>
         <image name="Gradient_Background" width="750" height="1334"/>
+        <image name="Leaderboard Icon" width="40" height="40"/>
+        <image name="My Stats Icon" width="40" height="40"/>
         <image name="Sign Up Button" width="306" height="76"/>
         <image name="SignUp" width="676" height="246"/>
         <image name="SignUp - Extended" width="676" height="444"/>
+        <image name="Trips Icon" width="40" height="40"/>
         <image name="conifr_small" width="512" height="512"/>
         <image name="cropped-Conifr-Logo-No-Text-nobkg" width="360" height="360"/>
     </resources>
