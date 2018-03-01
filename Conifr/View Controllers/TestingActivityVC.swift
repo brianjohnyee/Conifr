@@ -11,6 +11,7 @@ import ArcKit
 import CoreLocation
 import CoreMotion
 import SwiftNotes
+import Floaty
 
 
 //API KEY FOR ARCKIT: 3ca710a0adf94482af9837f1361bf882
@@ -30,6 +31,8 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var longLabel: UILabel!
     @IBOutlet weak var gpsActivityLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var confidenceLabel: UILabel!
+    
     
     //MARK - View Controller Initializated and brought to front
     override func viewDidLoad() {
@@ -41,6 +44,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
 
         getLocation()
         setUpLocomotion()
+        
         
         
         }
@@ -87,8 +91,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
             if let location = self.loco.rawLocation as? CLLocation {
                
                 var locationSample = self.loco.locomotionSample()
-               // print(locationSample.location)
-                //print(locationSample.location?.speed)
+                
                 
                 //Creating strings from lat/long data
                 var latitudeText:String = "\(locationSample.location?.coordinate.latitude)"
@@ -97,8 +100,9 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
                 //Setting label text for lat & long
                 self.latLabel.text = "LAT: " + latitudeText
                 self.longLabel.text = "LONG: " + longText
+                
+                
                 //Setting label text for Motion Activity by mapping first value (most confidence)
-                //self.activityLabel.text = locationSample.coreMotionActivityType.map { $0.rawValue }
                 self.timeLabel.text = "\(locationSample.date)"
                 
 
@@ -152,26 +156,58 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     }
     
     public func classifyWithConfidence(classifier: ActivityTypeClassifier,locoSample: LocomotionSample) -> ActivityTypeName {
-        
         // classify a locomotion sample
         let results = classifier.classify(locoSample)
         
         // get the best match activity type
         let bestMatch = results.first
-        print(bestMatch?.name)
+        print(bestMatch)
         
-       // print(results.array)
-        if results.first?.name == ActivityTypeName.transport {
-            //print(bestMatch)
-        } else if results.first?.name == ActivityTypeName.cycling {
-            //print(bestMatch)
-        }
+        
         
         // print the best match type's name ("walking", "car", etc)
         //print(bestMatch?.name)
         self.activityLabel.text = (bestMatch?.name).map { $0.rawValue }
         
+    
+        self.confidenceLabel.text = "w/confidence:" + "\(bestMatch?.score)"
+        
+
         return bestMatch!.name
+        
+        //Gets value with most confidence
+        if let mostConfident = results.first {
+            
+            var confidence = mostConfident.score
+            var gpsMotion = locoSample.movingState
+            
+            
+            //Create Name, Confidence, GPS Motion and Time Dictionaryy
+            //var coupledMotionDataDictionary = Dictionary<String, Any>
+            
+            //Metadata to attach key-value with timestamp
+            //var metadata =
+            
+            
+            
+            //Create confidence Array
+            var confidenceArray = [Double]()
+            
+            //FIX: FORCE UNWRAPPING
+            confidenceArray.append(confidence)
+            
+            if gpsMotion == .moving && mostConfident.name != .stationary {
+                //I am in some motion
+            } else if gpsMotion == .uncertain {
+                //Idk but ignore this data
+            } else if gpsMotion == .stationary && mostConfident.name == .stationary {
+                //I am completely stationary (this is my trip ending condition
+                //if (i have been completely stationary for most than 10 minutes) {
+                    // end the trip and the leg
+                    // push data to be validated
+                //}
+            }
+        }
     }
     
     
@@ -184,6 +220,8 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
         
         
     }
+    
+    
     
     //=
     
@@ -240,7 +278,7 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
     //Handles location changes (GPS - not Motion chip)
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let currentLocation = locations.last {
-            print("My coordinates are: \(currentLocation.coordinate.latitude), \(currentLocation.coordinate.longitude)")
+           // print("My coordinates are: \(currentLocation.coordinate.latitude), \(currentLocation.coordinate.longitude)")
             locationManager.stopUpdatingLocation()
         }
     }

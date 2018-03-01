@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B32B2C0F203C0B1900F0E8B0 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32B2C0E203C0B1900F0E8B0 /* ViewController2.swift */; };
-		B3645CC8202C3DE10027DF8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3645CC7202C3DE10027DF8F /* ViewController.swift */; };
 		B3FE209B2040CFB500B0A37F /* ConifrLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FE209A2040CFB500B0A37F /* ConifrLogo.png */; };
 		B3FE209D2040D65500B0A37F /* Profile Icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B3FE209C2040D65500B0A37F /* Profile Icon.pdf */; };
+		58647FBD203F2D1A00C887AC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58647FBB203F2D1A00C887AC /* ProfileVC.swift */; };
+		9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */; };
+		9A2E3AD9203CEBE900F3D40F /* LeaderboardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */; };
+		9A49F1742045E871001ECB50 /* AddTripVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49F1732045E871001ECB50 /* AddTripVC.swift */; };
+		9AEC69FB203B893500987D0F /* DetailedTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEC69FA203B893500987D0F /* DetailedTripCell.xib */; };
+		9AEC69FD203B893E00987D0F /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC69FC203B893E00987D0F /* LeaderboardCell.swift */; };
+		9AEC69FF203B894300987D0F /* DetailedTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC69FE203B894200987D0F /* DetailedTripCell.swift */; };
+		9AEC6A01203B894E00987D0F /* DetailedTripStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC6A00203B894E00987D0F /* DetailedTripStatsVC.swift */; };
+		9AEC6A06203B94BF00987D0F /* StatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC6A04203B94BF00987D0F /* StatsCell.swift */; };
+		9AEC6A07203B94BF00987D0F /* StatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEC6A05203B94BF00987D0F /* StatsCell.xib */; };
 		C32C6A88E77DDAD66DC7E858 /* Pods_Conifr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */; };
 		F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B82202AD9AA00A85DF9 /* LegModel.swift */; };
 		F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B85202ADC7000A85DF9 /* TripModel.swift */; };
 		F4014B88202ADD3000A85DF9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014B87202ADD3000A85DF9 /* UserModel.swift */; };
+		F4103519202E876000F23B21 /* Page1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103518202E876000F23B21 /* Page1VC.swift */; };
 		F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC465202A166C00A0D842 /* TabBarController.swift */; };
 		F41DC46A202A171900A0D842 /* MyTripsCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */; };
 		F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */; };
-		F41DC471202A185E00A0D842 /* LeaderboardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */; };
+		F46161142031406100A1F8E6 /* LoginVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46161132031406100A1F8E6 /* LoginVC1.swift */; };
+		F4616116203146EF00A1F8E6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4616115203146EF00A1F8E6 /* SignUpVC.swift */; };
 		F473B4BC202B9AD100A66FA7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F473B4BB202B9AD000A66FA7 /* Info.plist */; };
 		F4883F98202A1B9100C15034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4883F96202A1B9000C15034 /* Main.storyboard */; };
 		F4883F9A202A1C4700C15034 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4883F99202A1C4700C15034 /* Splash.storyboard */; };
@@ -34,20 +44,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B32B2C0E203C0B1900F0E8B0 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		B3645CC7202C3DE10027DF8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3FE209A2040CFB500B0A37F /* ConifrLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ConifrLogo.png; path = ../../Michael/ConifrLogo.png; sourceTree = "<group>"; };
 		B3FE209C2040D65500B0A37F /* Profile Icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Profile Icon.pdf"; path = "../../Profile/Profile Icon.pdf"; sourceTree = "<group>"; };
+		58647FBB203F2D1A00C887AC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
+		9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCollectionVC.swift; sourceTree = "<group>"; };
+		9A49F1732045E871001ECB50 /* AddTripVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripVC.swift; sourceTree = "<group>"; };
+		9AEC69FA203B893500987D0F /* DetailedTripCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedTripCell.xib; sourceTree = "<group>"; };
+		9AEC69FC203B893E00987D0F /* LeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
+		9AEC69FE203B894200987D0F /* DetailedTripCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedTripCell.swift; sourceTree = "<group>"; };
+		9AEC6A00203B894E00987D0F /* DetailedTripStatsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedTripStatsVC.swift; sourceTree = "<group>"; };
+		9AEC6A04203B94BF00987D0F /* StatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCell.swift; sourceTree = "<group>"; };
+		9AEC6A05203B94BF00987D0F /* StatsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsCell.xib; sourceTree = "<group>"; };
 		C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.release.xcconfig"; sourceTree = "<group>"; };
 		D8B4F7739FB840E743BB9E15 /* Pods-Conifr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conifr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conifr/Pods-Conifr.debug.xcconfig"; sourceTree = "<group>"; };
 		ECF8923D0AC0A20D4B986E43 /* Pods_Conifr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conifr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4014B82202AD9AA00A85DF9 /* LegModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegModel.swift; sourceTree = "<group>"; };
 		F4014B85202ADC7000A85DF9 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		F4014B87202ADD3000A85DF9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F4103518202E876000F23B21 /* Page1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Page1VC.swift; path = "View Controllers/Page1VC.swift"; sourceTree = SOURCE_ROOT; };
 		F41DC465202A166C00A0D842 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsCollectionVC.swift; sourceTree = "<group>"; };
 		F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyStatsCollectionVC.swift; path = "View Controllers/MyStatsCollectionVC.swift"; sourceTree = SOURCE_ROOT; };
-		F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeaderboardCollectionVC.swift; path = "View Controllers/LeaderboardCollectionVC.swift"; sourceTree = SOURCE_ROOT; };
+		F46161132031406100A1F8E6 /* LoginVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC1.swift; path = "View Controllers/LoginVC1.swift"; sourceTree = SOURCE_ROOT; };
+		F4616115203146EF00A1F8E6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpVC.swift; path = "View Controllers/SignUpVC.swift"; sourceTree = SOURCE_ROOT; };
 		F473B4BB202B9AD000A66FA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4883F97202A1B9000C15034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Conifr/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4883F99202A1C4700C15034 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
@@ -105,12 +125,16 @@
 		F41DC46B202A173800A0D842 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3645CC7202C3DE10027DF8F /* ViewController.swift */,
-				B32B2C0E203C0B1900F0E8B0 /* ViewController2.swift */,
+				F4616115203146EF00A1F8E6 /* SignUpVC.swift */,
+				F46161132031406100A1F8E6 /* LoginVC1.swift */,
+				F4103518202E876000F23B21 /* Page1VC.swift */,
 				F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */,
 				F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */,
 				F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */,
-				F41DC470202A185E00A0D842 /* LeaderboardCollectionVC.swift */,
+				9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */,
+				9AEC6A00203B894E00987D0F /* DetailedTripStatsVC.swift */,
+				58647FBB203F2D1A00C887AC /* ProfileVC.swift */,
+				9A49F1732045E871001ECB50 /* AddTripVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -184,6 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				F4C507CA202A8E0A00758504 /* TripsCell.xib */,
+				9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */,
+				9AEC69FA203B893500987D0F /* DetailedTripCell.xib */,
+				9AEC6A05203B94BF00987D0F /* StatsCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -192,6 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				F4C507CB202A8E0A00758504 /* TripsCell.swift */,
+				9AEC69FC203B893E00987D0F /* LeaderboardCell.swift */,
+				9AEC69FE203B894200987D0F /* DetailedTripCell.swift */,
+				9AEC6A04203B94BF00987D0F /* StatsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -266,8 +296,11 @@
 				F473B4BC202B9AD100A66FA7 /* Info.plist in Resources */,
 				F4883F98202A1B9100C15034 /* Main.storyboard in Resources */,
 				F4C507CC202A8E0B00758504 /* TripsCell.xib in Resources */,
+				9AEC6A07203B94BF00987D0F /* StatsCell.xib in Resources */,
 				F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */,
 				F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */,
+				9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */,
+				9AEC69FB203B893500987D0F /* DetailedTripCell.xib in Resources */,
 				F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */,
 				B3FE209D2040D65500B0A37F /* Profile Icon.pdf in Resources */,
 				F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */,
@@ -303,22 +336,34 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Conifr/Pods-Conifr-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ArcKit/ArcKit.framework",
 				"${PODS_ROOT}/ArcKitCore/ArcKitCore.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/PaginatedScrollView/PaginatedScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftNotes/SwiftNotes.framework",
 				"${BUILT_PRODUCTS_DIR}/Upsurge/Upsurge.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKitCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PaginatedScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftNotes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Upsurge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,8 +396,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41DC471202A185E00A0D842 /* LeaderboardCollectionVC.swift in Sources */,
+				9A2E3AD9203CEBE900F3D40F /* LeaderboardCollectionVC.swift in Sources */,
+				9AEC69FD203B893E00987D0F /* LeaderboardCell.swift in Sources */,
 				F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */,
+				58647FBD203F2D1A00C887AC /* ProfileVC.swift in Sources */,
 				F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */,
 				F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */,
 				F4C507CD202A8E0B00758504 /* TripsCell.swift in Sources */,
@@ -362,8 +409,15 @@
 				B32B2C0F203C0B1900F0E8B0 /* ViewController2.swift in Sources */,
 				F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */,
 				F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */,
+				F46161142031406100A1F8E6 /* LoginVC1.swift in Sources */,
 				F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */,
+				9AEC69FF203B894300987D0F /* DetailedTripCell.swift in Sources */,
 				F4014B88202ADD3000A85DF9 /* UserModel.swift in Sources */,
+				9A49F1742045E871001ECB50 /* AddTripVC.swift in Sources */,
+				F4616116203146EF00A1F8E6 /* SignUpVC.swift in Sources */,
+				9AEC6A06203B94BF00987D0F /* StatsCell.swift in Sources */,
+				F4103519202E876000F23B21 /* Page1VC.swift in Sources */,
+				9AEC6A01203B894E00987D0F /* DetailedTripStatsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,13 +547,15 @@
 			baseConfigurationReference = D8B4F7739FB840E743BB9E15 /* Pods-Conifr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Conifr/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ucsc.Conifr;
+				PRODUCT_BUNDLE_IDENTIFIER = ucsc.conifr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -510,13 +566,15 @@
 			baseConfigurationReference = C18298D9DF027F1235BBA55C /* Pods-Conifr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Conifr/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ucsc.Conifr;
+				PRODUCT_BUNDLE_IDENTIFIER = ucsc.conifr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

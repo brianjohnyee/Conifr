@@ -26,7 +26,7 @@ class User {
     init?(uid: String, email: String, name: String, college: String, university:String, rank: String, trips: [Trip]) {
         
         //Initialization should fail if distance is less than zero or total C02 emission is less than 0 or mode of transportation is empty or start/end time is less than or equal to zero
-        if uid.isEmpty || email.isEmpty || name.isEmpty || college.isEmpty || university.isEmpty || rank.isEmpty || trips.isEmpty {
+        if uid.isEmpty || email.isEmpty || name.isEmpty || college.isEmpty || university.isEmpty {
             return nil
         }
         
