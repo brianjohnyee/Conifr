@@ -46,7 +46,6 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
         setUpLocomotion()
         
         
-        
         }
 
     //Sets up all needed parameters for ArcKit
@@ -220,7 +219,6 @@ class TestingActivityVC: UIViewController,CLLocationManagerDelegate {
         
         
     }
-    
     
     
     //=

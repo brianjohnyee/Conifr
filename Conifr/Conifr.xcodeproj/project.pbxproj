@@ -27,9 +27,14 @@
 		F46161142031406100A1F8E6 /* LoginVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46161132031406100A1F8E6 /* LoginVC1.swift */; };
 		F4616116203146EF00A1F8E6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4616115203146EF00A1F8E6 /* SignUpVC.swift */; };
 		F473B4BC202B9AD100A66FA7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F473B4BB202B9AD000A66FA7 /* Info.plist */; };
+		F47F7F8C204755EE0015D5B9 /* AdddTripCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F7F8B204755EE0015D5B9 /* AdddTripCollectionVC.swift */; };
+		F47F7F8E204756E80015D5B9 /* AddTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47F7F8D204756E80015D5B9 /* AddTripCell.xib */; };
+		F47F7F9020475A280015D5B9 /* AddTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F7F8F20475A280015D5B9 /* AddTripCell.swift */; };
+		F47F7F9220475E320015D5B9 /* AddLegCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47F7F9120475E320015D5B9 /* AddLegCell.xib */; };
 		F4883F98202A1B9100C15034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4883F96202A1B9000C15034 /* Main.storyboard */; };
 		F4883F9A202A1C4700C15034 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4883F99202A1C4700C15034 /* Splash.storyboard */; };
 		F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */; };
+		F48DCB3D204254BC00BE6A17 /* tellUsAboutYourselfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DCB3C204254BB00BE6A17 /* tellUsAboutYourselfVC.swift */; };
 		F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4AD566B202A0C8200C6D321 /* GoogleService-Info.plist */; };
 		F4B5F848202A0B6D008B7C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */; };
 		F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */; };
@@ -63,9 +68,14 @@
 		F46161132031406100A1F8E6 /* LoginVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC1.swift; path = "View Controllers/LoginVC1.swift"; sourceTree = SOURCE_ROOT; };
 		F4616115203146EF00A1F8E6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpVC.swift; path = "View Controllers/SignUpVC.swift"; sourceTree = SOURCE_ROOT; };
 		F473B4BB202B9AD000A66FA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47F7F8B204755EE0015D5B9 /* AdddTripCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdddTripCollectionVC.swift; sourceTree = "<group>"; };
+		F47F7F8D204756E80015D5B9 /* AddTripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTripCell.xib; sourceTree = "<group>"; };
+		F47F7F8F20475A280015D5B9 /* AddTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripCell.swift; sourceTree = "<group>"; };
+		F47F7F9120475E320015D5B9 /* AddLegCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddLegCell.xib; sourceTree = "<group>"; };
 		F4883F97202A1B9000C15034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Conifr/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4883F99202A1C4700C15034 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestingActivityVC.swift; path = "View Controllers/TestingActivityVC.swift"; sourceTree = SOURCE_ROOT; };
+		F48DCB3C204254BB00BE6A17 /* tellUsAboutYourselfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tellUsAboutYourselfVC.swift; sourceTree = "<group>"; };
 		F4AD566B202A0C8200C6D321 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4B5F844202A0B6D008B7C72 /* Conifr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conifr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B5F847202A0B6D008B7C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,10 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				F4616115203146EF00A1F8E6 /* SignUpVC.swift */,
+				F47F7F8B204755EE0015D5B9 /* AdddTripCollectionVC.swift */,
 				F46161132031406100A1F8E6 /* LoginVC1.swift */,
 				F4103518202E876000F23B21 /* Page1VC.swift */,
 				F4883F9B202A1CAD00C15034 /* TestingActivityVC.swift */,
 				F41DC469202A171900A0D842 /* MyTripsCollectionVC.swift */,
+				F48DCB3C204254BB00BE6A17 /* tellUsAboutYourselfVC.swift */,
 				F41DC46E202A182A00A0D842 /* MyStatsCollectionVC.swift */,
 				9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */,
 				9AEC6A00203B894E00987D0F /* DetailedTripStatsVC.swift */,
@@ -202,6 +214,8 @@
 				9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */,
 				9AEC69FA203B893500987D0F /* DetailedTripCell.xib */,
 				9AEC6A05203B94BF00987D0F /* StatsCell.xib */,
+				F47F7F8D204756E80015D5B9 /* AddTripCell.xib */,
+				F47F7F9120475E320015D5B9 /* AddLegCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -210,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C507CB202A8E0A00758504 /* TripsCell.swift */,
+				F47F7F8F20475A280015D5B9 /* AddTripCell.swift */,
 				9AEC69FC203B893E00987D0F /* LeaderboardCell.swift */,
 				9AEC69FE203B894200987D0F /* DetailedTripCell.swift */,
 				9AEC6A04203B94BF00987D0F /* StatsCell.swift */,
@@ -288,6 +303,7 @@
 				F4883F98202A1B9100C15034 /* Main.storyboard in Resources */,
 				F4C507CC202A8E0B00758504 /* TripsCell.xib in Resources */,
 				9AEC6A07203B94BF00987D0F /* StatsCell.xib in Resources */,
+				F47F7F8E204756E80015D5B9 /* AddTripCell.xib in Resources */,
 				F4C507C7202A804600758504 /* vienna-ring-bikeride.gpx in Resources */,
 				F4AD566C202A0C8200C6D321 /* GoogleService-Info.plist in Resources */,
 				9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */,
@@ -295,6 +311,7 @@
 				F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */,
 				F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */,
 				F4883F9A202A1C4700C15034 /* Splash.storyboard in Resources */,
+				F47F7F9220475E320015D5B9 /* AddLegCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +340,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Conifr/Pods-Conifr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/ArcKit/ArcKit.framework",
 				"${PODS_ROOT}/ArcKitCore/ArcKitCore.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
@@ -340,6 +358,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcKitCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
@@ -385,9 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48DCB3D204254BC00BE6A17 /* tellUsAboutYourselfVC.swift in Sources */,
 				9A2E3AD9203CEBE900F3D40F /* LeaderboardCollectionVC.swift in Sources */,
 				9AEC69FD203B893E00987D0F /* LeaderboardCell.swift in Sources */,
 				F41DC46F202A182A00A0D842 /* MyStatsCollectionVC.swift in Sources */,
+				F47F7F8C204755EE0015D5B9 /* AdddTripCollectionVC.swift in Sources */,
 				58647FBD203F2D1A00C887AC /* ProfileVC.swift in Sources */,
 				F41DC466202A166C00A0D842 /* TabBarController.swift in Sources */,
 				F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */,
@@ -401,6 +422,7 @@
 				9AEC69FF203B894300987D0F /* DetailedTripCell.swift in Sources */,
 				F4014B88202ADD3000A85DF9 /* UserModel.swift in Sources */,
 				F4616116203146EF00A1F8E6 /* SignUpVC.swift in Sources */,
+				F47F7F9020475A280015D5B9 /* AddTripCell.swift in Sources */,
 				9AEC6A06203B94BF00987D0F /* StatsCell.swift in Sources */,
 				F4103519202E876000F23B21 /* Page1VC.swift in Sources */,
 				9AEC6A01203B894E00987D0F /* DetailedTripStatsVC.swift in Sources */,

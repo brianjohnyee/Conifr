@@ -1,4 +1,5 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
   - ArcKit (5.0.0.pre.6):
     - ArcKit/Base (= 5.0.0.pre.6)
   - ArcKit/Base (5.0.0.pre.6):
@@ -67,6 +68,7 @@ PODS:
   - Upsurge (0.10.0)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - ArcKit (~> 5.0.0.pre)
   - ArcKit/LocalStore (~> 5.0.0.pre)
   - Firebase/Auth
@@ -79,6 +81,7 @@ DEPENDENCIES:
   - SwiftNotes
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   ArcKit: d2de58cd30c3a30cd4504e29f78e52f463da1044
   ArcKitCore: d2010bf45d12dac215552011c586dda7beef3aa6
   Firebase: 7d3b8cd837ad9fcd391657734c0d56dab8e9a5a3
@@ -100,6 +103,6 @@ SPEC CHECKSUMS:
   SwiftNotes: 51d71568d7515c5c82aa791b88900cf8059b8beb
   Upsurge: 07095027bbabc0d5c15b61616421eb87018852fa
 
-PODFILE CHECKSUM: b0335fb14c5b4157064690f939bcfe4a765272bd
+PODFILE CHECKSUM: 66545e5df1892250b11999111449cf1a7b59376c
 
 COCOAPODS: 1.4.0

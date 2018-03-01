@@ -15,6 +15,7 @@ pod 'PaginatedScrollView'
 pod 'Motion'
 pod 'Material'
 pod 'Floaty'
+pod 'ActionSheetPicker-3.0'
 
 # Pods for Conifr
 

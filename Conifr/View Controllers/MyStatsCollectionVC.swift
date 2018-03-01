@@ -38,9 +38,10 @@ class MyStatsCollectionVC: UICollectionViewController {
     }
     
     @objc func pushProfile(sender: UIBarButtonItem){
-        let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "profile") as! ProfileVC
         
+        let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "profile") as! ProfileVC
         navigationController?.pushViewController(profileVC, animated: true)
+        
     }
 
     /*

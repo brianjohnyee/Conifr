@@ -14,6 +14,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+
 class SignUpVC: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
     
     @IBOutlet var name: TextField!
@@ -55,8 +56,15 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
                         let userInfoToDB = ["email" : emailText,
                                             "name": nameText]
                         
+                        print(user)
+                        
                         if let user = user {
+                            print(user)
                             Database.database().reference(withPath: "users").child(user.uid).updateChildValues(userInfoToDB)
+                            UserDefaults.standard.set(user.uid, forKey: "uid")
+                            UserDefaults.standard.set(true, forKey: "user_logged_in")
+                        } else {
+                                print("User errored out")
                             }
                         }
                     }
@@ -152,7 +160,13 @@ extension SignUpVC: TextFieldDelegate {
         }
         return false
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
+
 
 
 extension UIColor {
