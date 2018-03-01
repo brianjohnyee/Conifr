@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3FE209B2040CFB500B0A37F /* ConifrLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FE209A2040CFB500B0A37F /* ConifrLogo.png */; };
+		B3FE209D2040D65500B0A37F /* Profile Icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B3FE209C2040D65500B0A37F /* Profile Icon.pdf */; };
 		58647FBD203F2D1A00C887AC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58647FBB203F2D1A00C887AC /* ProfileVC.swift */; };
 		9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */; };
 		9A2E3AD9203CEBE900F3D40F /* LeaderboardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3FE209A2040CFB500B0A37F /* ConifrLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ConifrLogo.png; path = ../../Michael/ConifrLogo.png; sourceTree = "<group>"; };
+		B3FE209C2040D65500B0A37F /* Profile Icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Profile Icon.pdf"; path = "../../Profile/Profile Icon.pdf"; sourceTree = "<group>"; };
 		58647FBB203F2D1A00C887AC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9A2E3AD6203CEAC800F3D40F /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
 		9A2E3AD8203CEBE900F3D40F /* LeaderboardCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCollectionVC.swift; sourceTree = "<group>"; };
@@ -165,6 +169,10 @@
 				F41DC46C202A17BD00A0D842 /* Storyboards */,
 				F41DC46B202A173800A0D842 /* View Controllers */,
 				F4B5F846202A0B6D008B7C72 /* Conifr */,
+				B3FE209C2040D65500B0A37F /* Profile Icon.pdf */,
+				B3FE209A2040CFB500B0A37F /* ConifrLogo.png */,
+				F4B5F851202A0B6D008B7C72 /* Assets.xcassets */,
+				F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */,
 				F4B5F845202A0B6D008B7C72 /* Products */,
 				792D3217D2CF23E25EE8C96D /* Pods */,
 				E6B72DC5F144FA286EB6D1BD /* Frameworks */,
@@ -183,8 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				F41DC46D202A17E100A0D842 /* Plist */,
-				F4B5F851202A0B6D008B7C72 /* Assets.xcassets */,
-				F4B5F84E202A0B6D008B7C72 /* Conifr.xcdatamodeld */,
 			);
 			path = Conifr;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 				9A2E3AD7203CEAC800F3D40F /* LeaderboardCell.xib in Resources */,
 				9AEC69FB203B893500987D0F /* DetailedTripCell.xib in Resources */,
 				F4C507C5202A799D00758504 /* vienna-graz-by-car.gpx in Resources */,
+				B3FE209D2040D65500B0A37F /* Profile Icon.pdf in Resources */,
 				F4B5F852202A0B6D008B7C72 /* Assets.xcassets in Resources */,
 				F4883F9A202A1C4700C15034 /* Splash.storyboard in Resources */,
+				B3FE209B2040CFB500B0A37F /* ConifrLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +404,9 @@
 				F4883F9C202A1CAD00C15034 /* TestingActivityVC.swift in Sources */,
 				F4C507CD202A8E0B00758504 /* TripsCell.swift in Sources */,
 				F41DC46A202A171900A0D842 /* MyTripsCollectionVC.swift in Sources */,
+				B3645CC8202C3DE10027DF8F /* ViewController.swift in Sources */,
 				F4B5F850202A0B6D008B7C72 /* Conifr.xcdatamodeld in Sources */,
+				B32B2C0F203C0B1900F0E8B0 /* ViewController2.swift in Sources */,
 				F4014B83202AD9AA00A85DF9 /* LegModel.swift in Sources */,
 				F4014B86202ADC7000A85DF9 /* TripModel.swift in Sources */,
 				F46161142031406100A1F8E6 /* LoginVC1.swift in Sources */,
@@ -539,7 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JXN9JNTRNB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Conifr/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JXN9JNTRNB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Conifr/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
