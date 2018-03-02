@@ -13,13 +13,15 @@ class ViewController2: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     
-     var list = ["Name", "Email", "College", "Clear Data", "About", "Contact Us", "Legal"]
-    var listDesc = ["Name", "user@ucsc.edu", "Rachel Carson College", "Clear Data", "About Conifr", "Conact us @", "Legal"]
+    var list = ["Name", "Email", "College", "Clear Data", "About", "Contact Us", "Legal"]
+    var listDesc = ["Billy Willy", "user@ucsc.edu", "Rachel Carson College", "Clear the D@ta", "About Conifr", "Conact us @...", "Legal asasfdf"]
+   var myIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        titleLabel.text = list[AnyString]
-//        descLabel.text = listDesc[AnyString]
+        titleLabel.text = list[myIndex]
+        descLabel.text = listDesc[myIndex]
         
         // Do any additional setup after loading the view.
     }
