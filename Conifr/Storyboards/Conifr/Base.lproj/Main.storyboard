@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="aFm-IR-daK" id="5Rd-jh-x8h"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="My Stats" id="qOw-Mo-Edb"/>
+                    <tabBarItem key="tabBarItem" title="My Stats" image="My Stats Icon" id="qOw-Mo-Edb"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKg-9J-VlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +208,7 @@
                             <outlet property="delegate" destination="Pma-bN-bnU" id="ird-cJ-IpM"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Leadboard" id="eG3-Bs-MqK"/>
+                    <tabBarItem key="tabBarItem" title="Leadboard" image="Leaderboard Icon" id="eG3-Bs-MqK"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tJ-au-9qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,28 +295,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv9-aP-taA">
-                                <rect key="frame" x="166" y="374" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDl-Cw-730">
-                                <rect key="frame" x="100" y="176" width="174" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv9-aP-taA">
+                                <rect key="frame" x="83" y="384" width="209" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuh-XU-X4Y">
-                                <rect key="frame" x="16" y="602" width="46" height="30"/>
+                                <rect key="frame" x="16" y="29" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="PmM-dv-s8m" kind="show" id="Fnc-lJ-xBt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDl-Cw-730">
+                                <rect key="frame" x="100" y="212" width="174" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="OvI-Es-2vS"/>
@@ -359,7 +359,7 @@
                             <outlet property="delegate" destination="eTf-b0-F7U" id="xRC-E0-VS4"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Trips" id="gR0-XK-r0K" userLabel="My Trips"/>
+                    <tabBarItem key="tabBarItem" title="Trips" image="Trips Icon" id="gR0-XK-r0K" userLabel="My Trips"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hG7-fL-m4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,6 +388,9 @@
     </scenes>
     <resources>
         <image name="ConifrLogo.png" width="512" height="512"/>
+        <image name="Leaderboard Icon" width="40" height="40"/>
+        <image name="My Stats Icon" width="40" height="40"/>
         <image name="Profile Icon" width="38" height="38"/>
+        <image name="Trips Icon" width="40" height="40"/>
     </resources>
 </document>
