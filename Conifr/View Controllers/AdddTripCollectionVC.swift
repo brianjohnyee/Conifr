@@ -18,7 +18,6 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     private let reuseIdentifier = "addTrip"
     var numberOfItemsInSection = Int()
     var legs = [Leg]()
-    var count = 0
     var coord = [CLLocationCoordinate2D]()
     var distance = [Double]()
     var distances = Double()
@@ -60,7 +59,6 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
                 //The start and end point don't reside in the same leg
                 
             }
-            
             //Sets trip to child
             refToUser.child("trips").child(tripKey).setValue(true)
         }
@@ -116,10 +114,68 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
             
             //addInfoCell.endPoint
             
+            addInfoCell.mapView?.delegate = self
+            var donzo = 0
+            while donzo == 0 {
+            if(addInfoCell.count > 1){
+            let sourceCoordinates = addInfoCell.coord[addInfoCell.count - 2]
+            let destCoordinates = addInfoCell.coord[addInfoCell.count - 1]
+            // mapkit placemarks
+            let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates)
+            let destPlacemark = MKPlacemark(coordinate: destCoordinates)
+            let test1 = CLLocation(latitude: sourceCoordinates.latitude,longitude: sourceCoordinates.longitude)
+            let test2 = CLLocation(latitude: destCoordinates.latitude, longitude: destCoordinates.longitude)
+            var dist : CLLocationDistance = test1.distance(from: test2)
+            
+            self.distance.append(dist / 1609.34)
+            
+           /* print("trip distance = \(addInfoCell.distance[addInfoCell.count - 2]) m")
+            distances += (distance[addInfoCell.count-2])
+            print("total distance = \(distances)")*/
+            
+            // source item important for getting directions 11
+            let sourceItem = MKMapItem(placemark: sourcePlacemark)
+            let destItem = MKMapItem(placemark: destPlacemark)
+            
+            let directionRequest = MKDirectionsRequest()
+            directionRequest.source = sourceItem
+            directionRequest.destination = destItem
+            directionRequest.transportType = .any
+            // EOIWNGEOIGNROREG
+            
+            let directions = MKDirections(request: directionRequest)
+            directions.calculate(completionHandler: {
+                response, error in
+                guard let response = response else {
+                    if let error = error{
+                        print("sometihng went wrong")
+                    }
+                    return
+                }
+                
+                let route = response.routes[0]
+                addInfoCell.mapView?.add(route.polyline,level: .aboveRoads)
+                let rekt  = route.polyline.boundingMapRect
+                //self.mapkitview.setRegion(MKCoordinateRegionForMapRect(rekt), animated: true)
+                
+                
+            })
+            }
+                donzo = 1
+            }
             return addInfoCell
             
         }
 
+    }
+    
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay)-> MKOverlayRenderer{
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.blue
+        renderer.lineWidth = 2.0
+        
+        return renderer
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
