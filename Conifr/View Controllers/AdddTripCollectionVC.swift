@@ -9,14 +9,19 @@
 import Foundation
 import UIKit
 import FirebaseDatabase
+import MapKit
 
-class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, MKMapViewDelegate {
     
     @IBOutlet weak var addTripCollectionView: UICollectionView!
     
     private let reuseIdentifier = "addTrip"
     var numberOfItemsInSection = Int()
     var legs = [Leg]()
+    var count = 0
+    var coord = [CLLocationCoordinate2D]()
+    var distance = [Double]()
+    var distances = Double()
     
     override func viewDidLoad() {
         //
@@ -90,12 +95,13 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        
+        //Last cell
         if indexPath.item == numberOfItemsInSection - 1 {
             
             let addLegCell = collectionView.dequeueReusableCell(withReuseIdentifier: "addLeg", for: indexPath)
             
             addLegCell.layer.cornerRadius = 12
+            
             
             
             //collectionView.cellForItem(at: indexPath)?.contentView.bounds.size.height = 50
@@ -106,8 +112,11 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
             
             let addInfoCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! AddTripCell
             
-            return addInfoCell
+            //addInfoCell.startPoint
             
+            //addInfoCell.endPoint
+            
+            return addInfoCell
             
         }
 
@@ -123,6 +132,8 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
         
         
     }
+    
+    
     
     
 }
