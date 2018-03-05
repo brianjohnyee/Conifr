@@ -17,9 +17,12 @@ class AddTripCell: UICollectionViewCell {
     var anno = MKPointAnnotation()
     var anno1 = MKPointAnnotation()
     var distance = [Double]()
-    var distances = Double()
     var pin1 = 0
     var pin2 = 0
+    var names = String()
+    var modeOfTrans = String()
+    var start = String()
+    var end = String()
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var startPoint: UITextField!
@@ -29,6 +32,22 @@ class AddTripCell: UICollectionViewCell {
     @IBOutlet weak var endTime: UITextField!
     @IBOutlet weak var mapView: MKMapView?
     
+    @IBAction func names(_ sender: Any) {
+        print("pls \(anno.coordinate.latitude)")
+        names = name.text!
+    }
+    
+    @IBAction func modeOfTrans(_ sender: Any) {
+        modeOfTrans = modeOfTransportation.text!
+    }
+    
+    @IBAction func starting(_ sender: Any) {
+        start = startTime.text!
+    }
+    
+    @IBAction func ending(_ sender: Any) {
+        end = endTime.text!
+    }
     
     @IBAction func pins(_ sender: Any) {
         if (pin1 == 1){

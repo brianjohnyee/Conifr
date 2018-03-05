@@ -18,7 +18,7 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     private let reuseIdentifier = "addTrip"
     var numberOfItemsInSection = Int()
     var legs = [Leg]()
-    var coord = [CLLocationCoordinate2D]()
+    var coord = [[CLLocationCoordinate2D]]()
     var distance = [Double]()
     var distances = Double()
     
@@ -118,8 +118,13 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
             var donzo = 0
             while donzo == 0 {
             if(addInfoCell.count > 1){
-            let sourceCoordinates = addInfoCell.coord[addInfoCell.count - 2]
-            let destCoordinates = addInfoCell.coord[addInfoCell.count - 1]
+            let sourceCoordinates = addInfoCell.anno.coordinate
+            let destCoordinates = addInfoCell.anno1.coordinate
+                print("plspls \(numberOfItemsInSection)")
+              //  print("plsplspls \(indexPath.row)")
+                if((indexPath.row + 3) == numberOfItemsInSection){
+                    coord.append([sourceCoordinates, destCoordinates])
+                }
             // mapkit placemarks
             let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates)
             let destPlacemark = MKPlacemark(coordinate: destCoordinates)
@@ -155,6 +160,7 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
                 
                 let route = response.routes[0]
                 addInfoCell.mapView?.add(route.polyline,level: .aboveRoads)
+                print(route.polyline.coordinates)
                 let rekt  = route.polyline.boundingMapRect
                 //self.mapkitview.setRegion(MKCoordinateRegionForMapRect(rekt), animated: true)
                 
@@ -192,4 +198,14 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     
     
     
+}
+public extension MKPolyline {
+    public var coordinates: [CLLocationCoordinate2D] {
+        var coords = [CLLocationCoordinate2D](repeating: kCLLocationCoordinate2DInvalid,
+                                              count: self.pointCount)
+        
+        self.getCoordinates(&coords, range: NSRange(location: 0, length: self.pointCount))
+        
+        return coords
+    }
 }
