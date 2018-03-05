@@ -19,6 +19,7 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     var numberOfItemsInSection = Int()
     var legs = [Leg]()
     var coord = [[CLLocationCoordinate2D]]()
+    var routes = [[CLLocationCoordinate2D]]()
     var distance = [Double]()
     var distances = Double()
     
@@ -160,7 +161,8 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
                 
                 let route = response.routes[0]
                 addInfoCell.mapView?.add(route.polyline,level: .aboveRoads)
-                print(route.polyline.coordinates)
+                self.routes.append(route.polyline.coordinates)
+                print(self.routes[indexPath.row])
                 let rekt  = route.polyline.boundingMapRect
                 //self.mapkitview.setRegion(MKCoordinateRegionForMapRect(rekt), animated: true)
                 
