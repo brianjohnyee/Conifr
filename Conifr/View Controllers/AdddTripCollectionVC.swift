@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import FirebaseDatabase
 import MapKit
+import ActionSheetPicker_3_0
 
 class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, MKMapViewDelegate {
     
@@ -22,6 +23,7 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     var routes = [[CLLocationCoordinate2D]]()
     var distance = [Double]()
     var distances = Double()
+    var modeOfTransportation = ["Car", "Bus", "Walking", "Driving", "Bike"]
     
     override func viewDidLoad() {
         //
@@ -51,6 +53,9 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
             for i in 0...numberOfItemsInSection-1 {
                 //Read points of data
                 var legKey = Database.database().reference().child("legs").childByAutoId().key
+                
+                print(legKey)
+                
                 
                 
                 
@@ -110,10 +115,7 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
         } else {
             
             let addInfoCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! AddTripCell
-            
-            //addInfoCell.startPoint
-            
-            //addInfoCell.endPoint
+           
             
             addInfoCell.mapView?.delegate = self
             var donzo = 0
@@ -171,6 +173,8 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
             }
                 donzo = 1
             }
+            //
+            
             return addInfoCell
             
         }

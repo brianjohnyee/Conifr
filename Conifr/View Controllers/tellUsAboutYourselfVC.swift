@@ -89,7 +89,7 @@ class tellUsAboutYourselfVC: UIViewController, UITextFieldDelegate {
             if !(affiliationTextField.text?.isEmpty)! {
             if let age = ageTextField.text as? NSString {
                 if let ageInt = age.integerValue as? Int {
-                    if ageInt > 17 {
+                    if ageInt >= 17 {
                         
                        //Roll Tide
                         if let uid = UserDefaults.standard.string(forKey: "uid"){
