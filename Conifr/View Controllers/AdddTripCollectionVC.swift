@@ -9,15 +9,20 @@
 import Foundation
 import UIKit
 import FirebaseDatabase
+import MapKit
 import ActionSheetPicker_3_0
 
-class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, MKMapViewDelegate {
     
     @IBOutlet weak var addTripCollectionView: UICollectionView!
     
     private let reuseIdentifier = "addTrip"
     var numberOfItemsInSection = Int()
     var legs = [Leg]()
+    var coord = [[CLLocationCoordinate2D]]()
+    var routes = [[CLLocationCoordinate2D]]()
+    var distance = [Double]()
+    var distances = Double()
     var modeOfTransportation = ["Car", "Bus", "Walking", "Driving", "Bike"]
     
     override func viewDidLoad() {
@@ -60,7 +65,6 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
                 //The start and end point don't reside in the same leg
                 
             }
-            
             //Sets trip to child
             refToUser.child("trips").child(tripKey).setValue(true)
         }
@@ -95,12 +99,13 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        
+        //Last cell
         if indexPath.item == numberOfItemsInSection - 1 {
             
             let addLegCell = collectionView.dequeueReusableCell(withReuseIdentifier: "addLeg", for: indexPath)
             
             addLegCell.layer.cornerRadius = 12
+            
             
             
             //collectionView.cellForItem(at: indexPath)?.contentView.bounds.size.height = 50
@@ -110,25 +115,79 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
         } else {
             
             let addInfoCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! AddTripCell
+           
             
-            //
+            addInfoCell.mapView?.delegate = self
+            var donzo = 0
+            while donzo == 0 {
+            if(addInfoCell.count > 1){
+            let sourceCoordinates = addInfoCell.anno.coordinate
+            let destCoordinates = addInfoCell.anno1.coordinate
+                print("plspls \(numberOfItemsInSection)")
+              //  print("plsplspls \(indexPath.row)")
+                if((indexPath.row + 3) == numberOfItemsInSection){
+                    coord.append([sourceCoordinates, destCoordinates])
+                }
+            // mapkit placemarks
+            let sourcePlacemark = MKPlacemark(coordinate: sourceCoordinates)
+            let destPlacemark = MKPlacemark(coordinate: destCoordinates)
+            let test1 = CLLocation(latitude: sourceCoordinates.latitude,longitude: sourceCoordinates.longitude)
+            let test2 = CLLocation(latitude: destCoordinates.latitude, longitude: destCoordinates.longitude)
+            var dist : CLLocationDistance = test1.distance(from: test2)
             
-            if (addInfoCell.modeOfTransportation.isEditing) {
-                print(addInfoCell)
-                ActionSheetMultipleStringPicker.show(withTitle: "Mode Of Transportation", rows: [
-                    modeOfTransportation
-                    ], initialSelection: [0], doneBlock: {
-                        picker, indexes, values in
-                        addInfoCell.modeOfTransportation.text = values.debugDescription.lines[1]
-                        return
-                }, cancel: { ActionMultipleStringCancelBlock in return }, origin: self)
+            self.distance.append(dist / 1609.34)
+            
+           /* print("trip distance = \(addInfoCell.distance[addInfoCell.count - 2]) m")
+            distances += (distance[addInfoCell.count-2])
+            print("total distance = \(distances)")*/
+            
+            // source item important for getting directions 11
+            let sourceItem = MKMapItem(placemark: sourcePlacemark)
+            let destItem = MKMapItem(placemark: destPlacemark)
+            
+            let directionRequest = MKDirectionsRequest()
+            directionRequest.source = sourceItem
+            directionRequest.destination = destItem
+            directionRequest.transportType = .any
+            // EOIWNGEOIGNROREG
+            
+            let directions = MKDirections(request: directionRequest)
+            directions.calculate(completionHandler: {
+                response, error in
+                guard let response = response else {
+                    if let error = error{
+                        print("sometihng went wrong")
+                    }
+                    return
+                }
+                
+                let route = response.routes[0]
+                addInfoCell.mapView?.add(route.polyline,level: .aboveRoads)
+                self.routes.append(route.polyline.coordinates)
+                print(self.routes[indexPath.row])
+                let rekt  = route.polyline.boundingMapRect
+                //self.mapkitview.setRegion(MKCoordinateRegionForMapRect(rekt), animated: true)
+                
+                
+            })
             }
+                donzo = 1
+            }
+            //
             
             return addInfoCell
             
-            
         }
 
+    }
+    
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay)-> MKOverlayRenderer{
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.blue
+        renderer.lineWidth = 2.0
+        
+        return renderer
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -143,4 +202,16 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     }
     
     
+    
+    
+}
+public extension MKPolyline {
+    public var coordinates: [CLLocationCoordinate2D] {
+        var coords = [CLLocationCoordinate2D](repeating: kCLLocationCoordinate2DInvalid,
+                                              count: self.pointCount)
+        
+        self.getCoordinates(&coords, range: NSRange(location: 0, length: self.pointCount))
+        
+        return coords
+    }
 }
