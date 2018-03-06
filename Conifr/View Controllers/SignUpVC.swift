@@ -56,10 +56,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
                         let userInfoToDB = ["email" : emailText,
                                             "name": nameText]
                         
-                        print(user)
-                        
                         if let user = user {
-                            print(user)
                             Database.database().reference(withPath: "users").child(user.uid).updateChildValues(userInfoToDB)
                             UserDefaults.standard.set(user.uid, forKey: "uid")
                             UserDefaults.standard.set(true, forKey: "user_logged_in")

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import FirebaseDatabase
+import ActionSheetPicker_3_0
 
 class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
@@ -17,6 +18,7 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
     private let reuseIdentifier = "addTrip"
     var numberOfItemsInSection = Int()
     var legs = [Leg]()
+    var modeOfTransportation = ["Car", "Bus", "Walking", "Driving", "Bike"]
     
     override func viewDidLoad() {
         //
@@ -46,6 +48,9 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
             for i in 0...numberOfItemsInSection-1 {
                 //Read points of data
                 var legKey = Database.database().reference().child("legs").childByAutoId().key
+                
+                print(legKey)
+                
                 
                 
                 
@@ -105,6 +110,19 @@ class AdddTripCollectionVC: UICollectionViewController, UICollectionViewDelegate
         } else {
             
             let addInfoCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! AddTripCell
+            
+            //
+            
+            if (addInfoCell.modeOfTransportation.isEditing) {
+                print(addInfoCell)
+                ActionSheetMultipleStringPicker.show(withTitle: "Mode Of Transportation", rows: [
+                    modeOfTransportation
+                    ], initialSelection: [0], doneBlock: {
+                        picker, indexes, values in
+                        addInfoCell.modeOfTransportation.text = values.debugDescription.lines[1]
+                        return
+                }, cancel: { ActionMultipleStringCancelBlock in return }, origin: self)
+            }
             
             return addInfoCell
             

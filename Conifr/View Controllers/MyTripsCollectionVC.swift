@@ -27,16 +27,23 @@ class MyTripsCollectionVC: UICollectionViewController {
         // Do any additional setup after loading the view.
         
         let floaty = Floaty()
-        floaty.addItem("Track my trip", icon: #imageLiteral(resourceName: "Profile Icon"), handler: { item in
+        floaty.addItem("Track my trip", icon: #imageLiteral(resourceName: "location"), handler: { item in
             let alert = UIAlertController(title: "Hey", message: "I'm hungry...", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Me too", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             floaty.close()
         })
-        floaty.addItem("Add a trip", icon: #imageLiteral(resourceName: "Profile Icon"), handler: { item in
+        floaty.addItem("Add a trip", icon: #imageLiteral(resourceName: "plus"), handler: { item in
             let addTripVC = self.storyboard?.instantiateViewController(withIdentifier: "addTripCollectionVC") as! AdddTripCollectionVC
             
             self.navigationController?.pushViewController(addTripVC, animated: true)
+            
+            floaty.close()
+        })
+        floaty.addItem("Debug", icon: #imageLiteral(resourceName: "gear"), handler: { item in
+            let debugVC = self.storyboard?.instantiateViewController(withIdentifier: "debug") as! TestingActivityVC
+            
+            self.navigationController?.pushViewController(debugVC, animated: true)
             
             floaty.close()
         })

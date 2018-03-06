@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import MapKit
+import ActionSheetPicker_3_0
 
 class AddTripCell: UICollectionViewCell {
     
